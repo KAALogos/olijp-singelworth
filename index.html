@@ -1,0 +1,1277 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Singelworth, zeszyt olimpijski</title>
+<meta name="description" content="Zeszyt olimpijski OLiJP 2026/2027: Tajemnica lorda Singelworth Cypriana Norwida. Atlas scen, tezy, ćwiczenia, wypracowanie.">
+<style>
+:root{--bg:#f5f2eb;--paper:#fffdf9;--text:#213040;--muted:#5d6b78;--head:#172c3d;--accent:#176b73;--accent-bg:#e1f1ed;--border:#dadad2;--soft:#eeeae1;--warn:#8a4b12;--warn-bg:#fbeedd;--ok:#1f6a3a;--ok-bg:#e1f2e6;--shadow:0 3px 18px rgba(23,44,61,.05);--sidebar:272px;--font:ui-serif,Georgia,"Times New Roman",serif;--ui:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:light}
+html[data-theme=dark]{--bg:#111c26;--paper:#1a2934;--text:#e6ecef;--muted:#acbbc6;--head:#f2f5f7;--accent:#86d3ca;--accent-bg:#223e45;--border:#41515e;--soft:#253543;--warn:#f0c08e;--warn-bg:#3a2a18;--ok:#8fd8a8;--ok-bg:#1e3a2a;--shadow:0 3px 20px rgba(0,0,0,.18);color-scheme:dark}
+[hidden]{display:none!important}*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--ui);line-height:1.55}
+button,input,select,textarea{font:inherit;color:inherit}a{color:var(--accent);text-underline-offset:3px}button{cursor:pointer}
+button:focus-visible,a:focus-visible,textarea:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.skip{position:absolute;left:-200vw;top:8px;background:var(--paper);padding:8px;z-index:100}.skip:focus{left:10px}
+.app{display:grid;grid-template-columns:var(--sidebar) minmax(0,1fr);min-height:100vh}
+.rail{position:sticky;top:0;height:100vh;overflow:auto;background:#172c3d;color:#fff;display:flex;flex-direction:column;z-index:6;scrollbar-width:thin}
+.brand{padding:26px 22px 20px;border-bottom:1px solid #ffffff26}
+.mono{font:600 11px var(--ui);letter-spacing:.2em;color:#9bdbd0}
+.brand h1{font:600 24px/1.12 var(--font);margin:9px 0 6px;color:#fff}
+.brand small{font-size:12px;color:#c7d9df}
+.rail-list{padding:14px 10px}
+.nav-tab{display:flex;width:100%;text-align:left;align-items:center;gap:11px;background:transparent;color:#d8e4e7;border:0;border-radius:10px;padding:10px 12px;font-size:13px}
+.nav-tab:hover{background:#ffffff13}.nav-tab.active{background:#ffffff1f;color:#fff;font-weight:700}
+.nav-ic{font:600 11px var(--ui);color:#a9d8d5;min-width:22px}
+.rail-foot{margin-top:auto;padding:16px 20px 20px;border-top:1px solid #ffffff23;color:#bed0d3;font-size:11.5px}
+.rail-foot b{display:block;color:#fff;font-size:12px;margin-bottom:7px}
+.bar{height:6px;background:#ffffff26;border-radius:4px;overflow:hidden;margin:4px 0 9px}.bar i{display:block;height:100%;background:#9bdbd0;width:0}
+.app-main{min-width:0}
+.toolbar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:10px;padding:10px clamp(16px,3vw,44px);background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.menu-btn{display:none}
+.search{flex:1;max-width:560px;display:flex;align-items:center;gap:8px;border:1px solid var(--border);border-radius:10px;background:var(--bg);padding:0 12px}
+.search input{height:38px;border:0;outline:0;background:transparent;width:100%;min-width:0;font-size:13.5px}
+.search kbd{font-size:11px;color:var(--muted);border:1px solid var(--border);border-radius:5px;padding:1px 6px;background:var(--paper)}
+.tbtn{border:1px solid var(--border);border-radius:9px;background:var(--paper);padding:8px 11px;font-size:12.5px;white-space:nowrap}.tbtn:hover{border-color:var(--accent)}
+.content{padding:0 clamp(16px,4vw,52px) 90px;max-width:1040px}
+.view{padding-top:28px}
+h2.vt{font:600 30px/1.15 var(--font);color:var(--head);margin:0 0 6px;text-wrap:balance}
+.vsub{color:var(--muted);margin:0 0 22px;max-width:70ch}
+h3{font:700 15px/1.3 var(--ui);color:var(--head);margin:22px 0 6px}
+p{margin:.55em 0}.read{font-family:var(--font);font-size:17px;line-height:1.65;max-width:68ch}
+.panel{background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin:14px 0;box-shadow:var(--shadow)}
+.panel.q{border-left:4px solid var(--accent);font:italic 600 21px/1.4 var(--font);color:var(--head)}
+.panel.warn{background:var(--warn-bg);border-color:transparent;color:var(--warn)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.chip{display:inline-block;font:600 11.5px var(--ui);padding:3px 9px;border-radius:99px;background:var(--accent-bg);color:var(--accent);border:1px solid transparent;margin:0 5px 5px 0}
+button.chip{cursor:pointer}button.chip[aria-pressed=true]{background:var(--accent);color:var(--paper)}
+.badge{display:inline-block;font:700 11px var(--ui);padding:2px 7px;border-radius:5px;margin-right:6px;background:var(--soft);color:var(--head)}
+.st-T{background:#dcebf0}.st-B{background:#e6ecd8}.st-L{background:#f0e1d8}
+html[data-theme=dark] .st-T{background:#244455;color:#e6ecef}html[data-theme=dark] .st-B{background:#34432a;color:#e6ecef}html[data-theme=dark] .st-L{background:#4b3326;color:#e6ecef}
+.tg{font:700 11px var(--ui);padding:2px 7px;border-radius:5px;background:var(--soft)}
+.tg-T{background:var(--ok-bg);color:var(--ok)}.tg-B{background:var(--warn-bg);color:var(--warn)}.tg-N{background:#f3dede;color:#8a2b2b}.tg-I{background:var(--soft)}.tg-H{background:var(--accent-bg);color:var(--accent)}
+html[data-theme=dark] .tg-N{background:#4a2b2b;color:#f0b4b4}
+.filters{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 14px}.filters .lab{font-size:12px;color:var(--muted);margin-right:4px}
+.card{background:var(--paper);border:1px solid var(--border);border-radius:12px;margin:12px 0;box-shadow:var(--shadow);scroll-margin-top:84px}
+.card.flash{outline:3px solid var(--accent)}
+.card>.ch{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;width:100%;background:none;border:0;text-align:left}
+.card .ch .tt{flex:1;min-width:0}.card .ch b{font:600 17px/1.3 var(--font);color:var(--head);display:block}
+.card .ch small{color:var(--muted);font-size:12px}
+.card .ch .caret{font-size:12px;color:var(--muted);transition:transform .15s}
+.card.open .caret{transform:rotate(90deg)}
+.cb{padding:0 18px 18px;display:none;border-top:1px solid var(--border)}.card.open .cb{display:block}
+blockquote{margin:14px 0 4px;padding:10px 14px;border-left:3px solid var(--accent);background:var(--accent-bg);font:italic 16px/1.55 var(--font);color:var(--text);border-radius:0 8px 8px 0}
+.lbl{font:700 11px var(--ui);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:16px 0 4px}
+.alt{border:1px solid var(--border);border-radius:8px;padding:8px 12px;margin:6px 0;background:var(--bg);font-size:14px}.alt b{display:block;font-size:13px;color:var(--head)}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pc>div{border-radius:8px;padding:10px 12px;font-size:14px}.pc .pro{background:var(--ok-bg)}.pc .con{background:var(--warn-bg)}
+.pc b{display:block;font:700 11px var(--ui);letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+.mn{background:var(--soft);border-radius:8px;padding:9px 12px;font-size:13.5px;margin-top:10px}
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px}
+.tools label{display:flex;align-items:center;gap:6px;font-size:13px}
+.btn{border:1px solid var(--accent);background:var(--accent);color:var(--paper);border-radius:8px;padding:8px 14px;font-size:13px;font-weight:600}.btn.alt{background:var(--paper);color:var(--accent)}.btn.sm{padding:5px 10px;font-size:12px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+textarea.n,textarea.ed,input.tx,select.tx{width:100%;border:1px solid var(--border);border-radius:8px;background:var(--bg);padding:9px 11px;font-size:14px}
+textarea.n{min-height:78px;resize:vertical;margin-top:6px}
+textarea.ed{min-height:420px;font:16px/1.65 var(--font);resize:vertical}
+.star{border:1px solid var(--border);background:var(--paper);border-radius:8px;padding:4px 9px;font-size:13px}.star[aria-pressed=true]{background:#f6e7b3;border-color:#d1b24a;color:#5a4506}
+ul.l{margin:.3em 0 .3em 1.15em;padding:0}ul.l li{margin:.28em 0}
+.res{display:block;width:100%;text-align:left;background:var(--paper);border:1px solid var(--border);border-radius:10px;padding:10px 14px;margin:8px 0}.res:hover{border-color:var(--accent)}.res small{color:var(--muted)}
+.stat{display:flex;gap:10px;flex-wrap:wrap}.stat .s{flex:1;min-width:130px;background:var(--paper);border:1px solid var(--border);border-radius:10px;padding:10px 14px}.stat b{font:600 24px var(--font);color:var(--head);display:block}.stat span{font-size:12px;color:var(--muted)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:560px}th,td{border-bottom:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}th{color:var(--muted);font-weight:600}
+.status{font-size:13px;color:var(--muted);min-height:1.3em}
+.chk label{display:flex;gap:8px;align-items:flex-start;font-size:14px;margin:5px 0}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--head);color:var(--paper);padding:9px 16px;border-radius:9px;font-size:13px;z-index:50}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:12px}.cmp>div{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px;white-space:pre-wrap;font:14px/1.55 var(--font);max-height:340px;overflow:auto}
+.legend{display:flex;flex-wrap:wrap;gap:8px;font-size:13px}.legend span{display:flex;gap:6px;align-items:center}
+@media (max-width:860px){
+ .app{grid-template-columns:1fr}
+ .rail{position:fixed;left:0;top:0;bottom:0;width:min(84vw,300px);transform:translateX(-102%);transition:transform .2s;height:100%}
+ .rail.open{transform:none;box-shadow:0 0 0 100vmax rgba(0,0,0,.4)}
+ .menu-btn{display:inline-block}
+ .pc,.cmp{grid-template-columns:1fr}
+ h2.vt{font-size:25px}
+ .toolbar{gap:6px;padding:8px 16px}.search kbd{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media print{.rail,.toolbar,.tools,.filters,.btn,.menu-btn,.toast{display:none!important}.app{display:block}.card .cb{display:block!important}.card{break-inside:avoid;box-shadow:none}body{background:#fff;color:#000}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do treści</a>
+<div class="app">
+<aside class="rail" id="rail" aria-label="Menu">
+  <div class="brand"><div class="mono">OLiJP 2026/2027</div><h1>Tajemnica lorda Singelworth</h1><small>Cyprian Norwid · zeszyt olimpijski</small></div>
+  <nav class="rail-list" id="navlist" aria-label="Widoki"></nav>
+  <div class="rail-foot"><b>Postęp</b><div class="bar"><i id="progBar"></i></div><span id="progTxt"></span><p style="margin:10px 0 0">Notatki są zapisywane tylko w tej przeglądarce. Pobieraj kopię w zakładce Zeszyt.</p></div>
+</aside>
+<div class="app-main">
+  <div class="toolbar">
+    <button class="tbtn menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <div class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Szukaj w scenach, tezach, ćwiczeniach…" aria-label="Szukaj"><kbd>/</kbd></div>
+    <button class="tbtn" id="themeBtn" aria-label="Przełącz motyw">◐ Motyw</button>
+  </div>
+  <main class="content" id="main">
+    <section class="view" id="view-start"></section>
+    <section class="view" id="view-atlas" hidden></section>
+    <section class="view" id="view-zagadnienia" hidden></section>
+    <section class="view" id="view-tezy" hidden></section>
+    <section class="view" id="view-opracowania" hidden></section>
+    <section class="view" id="view-cwiczenia" hidden></section>
+    <section class="view" id="view-pojecia" hidden></section>
+    <section class="view" id="view-wypracowanie" hidden></section>
+    <section class="view" id="view-zeszyt" hidden></section>
+    <section class="view" id="view-szukaj" hidden></section>
+  </main>
+</div>
+</div>
+<script>
+/* ===== ATLAS SCEN =====
+   Lokalizacja: rozdział + numer strony druku Pini 1934 w nawiasach [465] (tak, jak na Wikiźródłach).
+   fakt = co jest w tekście; znaczenie / alts / pro / con = interpretacja (I) do sprawdzenia. */
+const WORKS = {
+  T: {name:"Tajemnica lorda Singelworth", short:"Tajemnica…", src:"Wikiźródła, Dzieła Cyprjana Norwida, wyd. Pini 1934, s. 465–472"},
+  B: {name:"Bransoletka", short:"Bransoletka", src:"Wikiźródła, Dzieła Cyprjana Norwida, wyd. Pini 1934, s. 450–453"},
+  L: {name:"Ad leones!", short:"Ad leones!", src:"Wikiźródła, Dzieła Cyprjana Norwida, wyd. Pini 1934, s. 473–478"}
+};
+
+const SCENES = [
+/* ---------- TAJEMNICA LORDA SINGELWORTH ---------- */
+{id:"ST1", w:"T", loc:"rozdz. I, [465] — początek", title:"Pytania zamiast opowieści",
+ quote:"Czy rzeczywiście były jakie ziemie Singelworth, we ważności baronji nadane przodkowi w linji prostej męża, o którym to moje spomnienie zapisuję?",
+ fakt:"Nowela zaczyna się od serii pytań o pochodzenie Singelworthów: czy mieli tytuł, ziemie, studia w Oksfordzie, miejsce w parlamencie, czy byli raczej właścicielami rękodzielni wyrabiającej perkaliki. Narrator mówi, że odpowiedź wymagałaby „romansopisarza”, a on pisze nowelę o „spostrzeżeniu psychologicznym”. Zapewnia tylko, że w wielkich hotelach Europy i Wschodu mówiło się „lord Singelworth”, zanim ktoś go zobaczył.",
+ narr:"Narrator pisze wspomnienie („moje spomnienie zapisuję”), a więc opowiada z odległości czasu. Nie podaje żadnej wiedzy o rodzie lorda. Zamiast tego pokazuje, jak „lord” zyskał tytuł: przez powtarzanie.",
+ means:"Seria pytań retorycznych; ironiczny katalog możliwych biografii (od parlamentu po perkaliki); metakomentarz o gatunku (romans a nowela).",
+ znaczenie:"Już pierwszy akapit przenosi uwagę z pytania „kim jest lord?” na pytanie „skąd wiemy, że jest lordem?”. Tytuł obiecuje zagadkę, a tekst od razu odmawia jej typowego rozwiązania.",
+ alts:[
+  {l:"Odczytanie gatunkowe", t:"Narrator wyznacza granicę między powieścią tajemnic a nowelą psychologiczną i wyjaśnia, dlaczego nie da klasycznej zagadki (por. Rzepczyński, który wiąże tytuł z konwencją „tajemnic” w literaturze XIX w.)."},
+  {l:"Odczytanie o tożsamości i autorytecie", t:"Tytuł lorda opiera się na opinii otoczenia, nie na dowodach. To zapowiada temat osądzania i fabrykowania pozorów."}],
+ pro:"Pytania nie dostają odpowiedzi w całej noweli; tytuł funkcjonuje jako „fakt społeczny”.",
+ con:"Narrator nie podważa istnienia lorda; kwestionuje tylko jego genealogię. Nie wolno z tego robić tezy, że lord „nie istnieje”.",
+ q:"Co się zmienia w odbiorze, gdy narrator zamiast opisać lorda, zadaje pytania o jego tytuł? Jaką wiedzę o bohaterze otrzymasz od razu, a jakiej nie dostaniesz do końca?",
+ tags:["P2","P3","P5"], th:["T1","T3"]},
+
+{id:"ST2", w:"T", loc:"rozdz. I, [465]", title:"Przybycie do hotelu pod Białym Lwem",
+ quote:"nie jak się gdzie przybywa, lecz jak się wraca.",
+ fakt:"W Wenecji, w hotelu pod białym lwem, najpierw czeka aeronauta z przyborami i majordomo. Aeronautę wysyła się na Lido, skąd można puszczać balon. Lord przypływa osobną gondolą, wychodzi na kamień progu i wchodzi „obojętnie”, jakby wracał. Narrator dodaje, że codzienne używanie balonu o tej samej godzinie „dawałoby pole do domniemywania”.",
+ narr:"Relacja zewnętrzna, oparta na obserwacji ceremonii. Narrator nie ma dostępu do myśli lorda.",
+ means:"Zderzenie rytuału i obojętności; kontrast między rozbudowanym przygotowaniem (majordomo, aeronauta) a spokojem bohatera; powtarzalność („codziennie o tej samej godzinie”).",
+ znaczenie:"Lord wchodzi do świata jako gotowy, wcześniej zapowiedziany wizerunek, a nie jako osoba z historią. Regularność jego lotów sama prowokuje domysły.",
+ alts:[
+  {l:"Teatralność", t:"Ceremonia przypomina wejście na scenę: widownia (hotel) jest uprzedzona, aktor się nie spieszy. [I]"},
+  {l:"Maska", t:"Wygląda na to, że lord ma stałą rolę (por. Dambek-Giallelis o lordzie jako „personie”, nie osobie, hipoteza autorki)."}],
+ pro:"Wszystko jest przygotowane przed jego przybyciem: opinia wyprzedza osobę.",
+ con:"To tylko jeden obraz; samo spokojne zachowanie nie dowodzi „odgrywania roli”.",
+ q:"Wypisz, co zostało przygotowane przed przybyciem lorda i kto to zrobił. Czego o nim samym dowiadujesz się z tej sceny?",
+ tags:["P1","P2"], th:["T3","T7"]},
+
+{id:"ST3", w:"T", loc:"rozdz. I, [465]", title:"Wieże, kopuły i „drzwi twarde zamkniętej tajemnicy”",
+ quote:"Pociski te jednakże obijały się ostatecznie o drzwi twarde zamkniętej tajemnicy.",
+ fakt:"Gdziekolwiek lord bawi (Kair, Konstantynopol, Moskwa, Wiedeń, Paryż), jego loty komentuje się „stosownie do zgadobliwości miejscowego umysłu i pochopów humoru”: opowiada się, głosi, zaprzecza i „uręcza”. Domysły, dowcipy i anegdoty „obijają się” o zamkniętą tajemnicę.",
+ narr:"Narrator wszechwiedzący w skali świata (wie, co mówią w kilku miastach), a jednocześnie nie zna odpowiedzi. To rzadkie połączenie.",
+ means:"Katalog czasowników mówienia (opowiadano, głoszono, zaprzeczano, uręczano); metafora „pocisków”; neologizm „zgadobliwość”.",
+ znaczenie:"Słowo „zgadobliwość” (użyte w noweli raz) to klucz ironiczny: opisuje skłonność umysłu do zgadywania i szybkiego przekształcania domysłu w pewnik. Rzepczyński uznaje je za ironiczną diagnozę przeciętnego poziomu myślenia XIX w.",
+ alts:[
+  {l:"Krytyka „zgadobliwego” umysłu (Rzepczyński [T])", t:"Ostrze ironii nie uderza w samo zgadywanie (to funkcja umysłu), tylko w użytek, jaki się z niego robi."},
+  {l:"Neutralna obserwacja", t:"Zdanie tylko stwierdza, że ludzie reagują różnie, bez wartościowania. [I] — słabiej uzasadnione przez „pochopy humoru”."}],
+ pro:"Wszystkie wersje pochodzą od otoczenia; lord nie wypowiada się w pierwszej części.",
+ con:"„Zgadobliwość” pojawia się tylko raz. Nie wolno budować na niej całej interpretacji bez innych fragmentów.",
+ q:"Jak brzmi zdanie z „zgadobliwością” w całości? Wskaż w nim wyrazy, które oceniają, i takie, które tylko relacjonują.",
+ tags:["P2","P3","P5"], th:["T1","T6"]},
+
+{id:"ST4", w:"T", loc:"rozdz. I, [465]–[466]", title:"Plotka w mieście pod obcym rządem",
+ quote:"przemilczenia, niedopowiedzenia, mgnienia powieki, chrząchnięcia i kichnięcia!...",
+ fakt:"Narrator mówi, że w Wenecji plotek było więcej niż gdzie indziej, bo „despotyzm rządu obcego” ma nierozłączną od siebie ostrożność. Im bardziej ograniczona jawna wolność wypowiedzi, tym większą siłę mają niedopowiedzenia, mgnienia powieki, chrząchnięcia i kichnięcia.",
+ narr:"Komentarz ogólny narratora, w stylu uogólnienia (sentencja). Wyraźnie ocenia sytuację polityczną.",
+ means:"Hiperbola („piorunnej siły”); wyliczenie drobnych gestów; paradoks (milczenie głośniejsze od słów).",
+ znaczenie:"To najważniejsze miejsce dla związku Wenecji z poetyką noweli: cenzura i nadzór sprawiają, że sens przenosi się z mowy na gest. Później kichnięcie Toniego i milczenie lorda działają według tej samej zasady.",
+ alts:[
+  {l:"Wenecja jako warunek zdarzeń", t:"Nowela działa dlatego, że rządzi tu strach przed otwartym słowem. W innym mieście plotka miałaby inny charakter. [I]"},
+  {l:"Komentarz przykładowy", t:"Narrator ilustruje ogólną prawdę o mowie i cenzurze, a Wenecja jest tylko przykładem. [I]"}],
+ pro:"Zdanie wprost łączy rząd, strach i rozrost plotek („im bywa więcej…”).",
+ con:"Tekst mówi „w Wenecji więcej niż w innem jakiem mieście”, czyli nie twierdzi, że tylko tu.",
+ q:"Jak brzmi rozumowanie narratora krok po kroku (od rządu do plotki)? Gdzie później w noweli pojawia się znaczący gest zamiast słowa?",
+ tags:["P1","P2","P5"], th:["T7","T8"],
+ mn:"Z Twoich notatek: „im większa wolność słowa, tym więcej plotek” (s. 2). Sprawdź jeszcze raz: tekst mówi, że im ściślej ogranicza się jawną wolność opinii, tym większą moc mają niedopowiedzenia. Sprawdź, czy dobrze odczytałaś kierunek zależności."},
+
+{id:"ST5", w:"T", loc:"rozdz. I, [466]", title:"Felietonista, generał i profesor",
+ quote:"Rzecz dziwna, jak uznanie masy przenosić się może łatwiej na to, co z pozoru na wiarogodność żadną nie zasługuje...",
+ fakt:"Trzy wyjaśnienia: paryski felietonista (higiena osobista, potwierdzają ją „necessery” pakowane do kosza), generał Kutasow z Odessy (raport: brak zagrożenia, w koszu cenny, łamliwy sprzęt, etruska waza lub porcelana), profesor z Heidelbergu (obserwacje meteorologiczne). Felietonista ma największy rozgłos. Narrator komentuje: uznanie masy łatwo przenosi się na to, co z pozoru nie zasługuje na wiarę.",
+ narr:"Narrator zestawia cudze wersje bez pewności, ale z wyraźnym komentarzem ironicznym na końcu („Rzecz dziwna…”).",
+ means:"Katalog trzech autorytetów (prasa, władza, nauka); ton raportu urzędowego; sentencja o „masie”.",
+ znaczenie:"Wersje pochodzą z trzech instytucji, a żadna nie ma dowodu. Zwycięża ta, która jest najbardziej rozpowszechniona. Rzepczyński pokazuje, że czytelnik rozpoznaje w każdej z postaci własną „zgadobliwość”.",
+ alts:[
+  {l:"Krytyka autorytetów", t:"Prasa, władza i nauka okazują się jednakowo niepewne. [I]"},
+  {l:"Mechanizm popularności (Adamiec według Rzepczyńskiego)", t:"Rzepczyński cytuje Adamca, który uważa, że każdy znalazł w tajemnicy odpowiedź na pytanie, jakie był w stanie postawić. Cytat z drugiej ręki [B]; sprawdź w tekście Adamca."}],
+ pro:"Żadna wersja nie ma dowodu, a mimo to narrator mówi o „rozgłosie” i „uznaniu masy”.",
+ con:"Profesor z Heidelbergu proponuje hipotezę rozsądną i narrator nie drwi z niej wprost (komentuje tylko, że lepiej zachęcać niż szydzić).",
+ q:"Jakiego rodzaju autorytet reprezentuje każda z trzech wersji? Dlaczego, według narratora, wygrywa ta, która „z pozoru na wiarogodność żadną nie zasługuje”?",
+ tags:["P2","P3","P5"], th:["T1","T2","T12"]},
+
+{id:"ST6", w:"T", loc:"rozdz. I, [466]–[467]", title:"Sior Toni di Bona Grazia, improwizator",
+ quote:"Improwizator względem przybycia lorda Singelworth postawił się jako obrońca sławy osobistej podróżnika.",
+ fakt:"Na placu św. Marka występuje improwizator Toni di Bona Grazia, „osoba historyczna”. Ma kapelusz trikorn, mówi „wargami arlekina (atoli arlekina klasycznego z czasów etruskich)”, nosi „dekoracje” z kłów wieprzowych, muszli i błyskotek. Przypis redakcyjny (P. P.) mówi, że Toni niedawno zmarł, i że nowela lepiej oddaje jego postać niż czasopisma. Austriaccy dygnitarze czasem go słuchają.",
+ narr:"Narrator mówi „którą wielokrotnie słyszeć miałem przyjemność”, czyli zaświadcza o historyczności Toniego własnym doświadczeniem. W przypisie pojawia się głos spoza narracji (P. P. = Przesmycki).",
+ means:"Kostium (arlekin, trikorn, „dekoracje”); opis jak wejście aktora; buffo; przypis autorski jako wyjątek w całej „trylogii włoskiej” (Dambek-Giallelis).",
+ znaczenie:"Toni to nieoficjalny komentator rzeczywistości pod cenzurą. Dambek-Giallelis pokazuje jego źródła (Goldoni, komedia dell’arte, relacja Baschet) i stawia hipotezę, że to on wytwarza postać lorda w opinii Wenecjan.",
+ alts:[
+  {l:"Mądry błazen (Rzepczyński [T])", t:"Toni, grając „arlekina”, demaskuje współczesność; jego mowa ma podwójnego adresata: słuchających i podsłuchujących."},
+  {l:"Ukryty spiritus movens (Dambek-Giallelis [T], pytanie badaczki)", t:"To on wprowadza lorda do wyobraźni Wenecjan i on komentuje jego odlot. Autorka zestawia to z tezą Dąbrowicz o „publicznym mówieniu”."}],
+ pro:"Bez Toniego nie ma legendy lorda: to on obraca plotki w widowisko.",
+ con:"Narrator pozostaje głównym organizatorem opowieści. Teza o „ukrytym sprawcy” jest hipotezą badaczki, nie faktem tekstowym.",
+ q:"Wypisz elementy kostiumu i gestu Toniego. Które z nich są komiczne, a które mogą być sygnałem dla „podsłuchujących”?",
+ tags:["P3","P4","P5"], th:["T8","T9"]},
+
+{id:"ST7", w:"T", loc:"rozdz. I, [467]", title:"Monolog Toniego: Piombi, konie i palimpsest śmietników",
+ quote:"Papier niezapisany czy jednakże podobna, ażeby tyle wysłowił?",
+ fakt:"W monologu Toni najpierw dziwi się, że wciąż ktoś miałby oskarżać lorda o to, że z wysoka „splunął zgóry”. Potem przechodzi do widoków z góry: Piombi i Most Westchnień wyglądają stamtąd jak „pełzające płaskie robactwo”, ale cztery konie św. Marka mają urok. Mówi o papierze, który z balonu upadł na wyspę Murano i „miał wytłumaczyć wszystko”. Czyta „dzieje” ze śmietników jak z palimpsestów (but, guzik, karty, bukiet, kałamarz). Zamyka żartem o nosach policji. Zbiera pieniądze na chustkę. Wcześniej kicha i wyciąga jaskrawą chustkę.",
+ narr:"Narrator relacjonuje cudzą mowę w całości, bez przerywania. Później, w rozdz. II, ten sam papier powraca jako temat sporu.",
+ means:"Przejście od patosu do trywialności; mowa dwuznaczna; gest (kichnięcie) jako sygnał; motyw „czytania z odpadków” (palimpsest); aluzja do policji.",
+ znaczenie:"Najbardziej „karnawałowy” moment noweli: błazen ośmiesza wzniosłość (wieże, konie) i podnosi śmieci do rangi tekstu. Papier niezapisany staje się znakiem pustym, który każdy może wypełnić.",
+ alts:[
+  {l:"Karnawałowa degradacja i odwrócenie (hipoteza [H], do sprawdzenia po lekturze Bachtina)", t:"Wzniosłe obiekty są „widziane od dołu”, a odpadki dostają rangę dokumentu. Zanim użyjesz Bachtina, sprawdź, które jego pojęcia tu naprawdę pasują."},
+  {l:"Mowa Ezopowa (Dąbrowicz według Dambek-Giallelis [B])", t:"W cytacie przytoczonym przez Dambek-Giallelis Dąbrowicz pisze, że wypowiedź improwizatora jest skierowana do dwóch typów odbiorców. Sprawdź w oryginale (SN 3–4, s. 221–223)."},
+  {l:"Papier jako luka", t:"Papier niezapisany nic nie wyjaśnia, a według Toniego „miał wytłumaczyć wszystko”. Znak pusty pokazuje, jak ludzie wypełniają brak wiedzy. [I]"}],
+ pro:"Fragment ma wyraźną dwuwarstwowość: komedia na wierzchu, aluzja polityczna pod spodem (kichnięcie, nosy policji).",
+ con:"Samo użycie śmietnika i ciała nie wystarcza, by mówić o karnawalizacji w sensie Bachtina; trzeba pokazać funkcję (odnowa? ambiwalentny śmiech?).",
+ q:"Co dokładnie Toni mówi o papierze i co z tego narrator uznaje za wiadomość, a co za anegdotę? Wskaż dwa miejsca, w których mowa Toniego przechodzi od patosu do trywialności.",
+ tags:["P3","P4","P5"], th:["T4","T9"],
+ mn:"Z Twoich notatek: „papier jest elementem tajemnicy, który nie wyjaśnia jej”, „niezapisany papier nie wyjaśnia tajemnicy” (s. 4). To dobry trop. Dopisz, kto wypowiada się o papierze (Toni, nie narrator)."},
+
+{id:"ST8", w:"T", loc:"rozdz. I, [467]–[468]", title:"Wenecja: „znudzona wielka dama”",
+ quote:"miastem, które zaiste że przeżyło idyllę, dramę, nadużyło tragedji i komedji i które, jako znudzona już wszystkiem wielka dama, pozostało piękne i czarowne",
+ fakt:"Po monologu Toniego narrator opisuje Wenecję: miasto na palach, targ rybaków, schronienie uskoków, republika kramarska, miasto, które „nadużyło tragedji i komedji”. Potem pokazuje potomków patrycjatu, którzy milczeniem i dumą znoszą obcy rząd, „jakby wygnańcy”. Opisuje wejście do pałacu od kanału lub od tyłu (kosz na linie, mozaikowe schody z herbami, papuga). Wspomina gondolierów śpiewających Tassa i wieczorne powroty.",
+ narr:"Narrator mówi do „ty” (drugoosobowe „mogłeś”, „wchodziłeś”), tworząc wrażenie wspólnego doświadczenia. To zmiana tonu na liryczno-wspomnieniowy.",
+ means:"Personifikacja (dama); anafora „miastem…”; przejście na drugą osobę; zderzenie piękna i upadku; barwne szczegóły (kosz na linie, papuga).",
+ znaczenie:"Wenecja jest tu miastem pamięci (Dambek-Giallelis: „semiofory”, czyli nośniki pamięci o tym, czego nie ma) i miastem „znudzonym wszystkim”. Rzepczyński widzi w „znudzonej damie” obraz współczesności, która zapomina o przeszłości i szuka sensacji zamiast głębokich tajemnic.",
+ alts:[
+  {l:"Wenecja jako archiwum pamięci (Dambek-Giallelis [T])", t:"Szczegóły historyczne pokazują lukę między tym, co minione, a obecnym życiem narratora."},
+  {l:"Wenecja jako alegoria współczesności (Rzepczyński [T])", t:"Miasto, które „przeżyło” wszystkie gatunki, teraz szuka tylko sensacji; dlatego tajemnicę zamienia na zagadkę."},
+  {l:"Paryż pod maską Wenecji (Kącka [T])", t:"Autorka podkreśla, że kontekst paryski jest silniejszy; Wenecja może pełnić rolę kamuflażu."}],
+ pro:"Trzy opracowania, trzy różne role Wenecji z tego samego fragmentu.",
+ con:"Każda z nich jest interpretacją, nie faktem tekstowym; nie wolno traktować ich jako jednego „zdania autora”.",
+ q:"Które szczegóły opisu Wenecji są historyczne, a które nadane przez Norwida? Porównaj trzy role Wenecji i wybierz tę, którą najlepiej poprą fragmenty rozdziału I.",
+ tags:["P1","P5"], th:["T7"],
+ mn:"Z Twoich notatek: „poetycki opis Wenecji jako miasta pięknego, wyniosłego i pełnego sprzeczności” (s. 5, fioletowy). Wykorzystaj to jako punkt wyjścia do porównania z trzema badaczami."},
+
+{id:"ST9", w:"T", loc:"rozdz. II, [468]–[469]", title:"Spór przy stole: papier, wyjście damy i wolność sztuki",
+ quote:"Dopiero, umiejąc wszystko wypowiedzieć, jest się wolnym, a bez tejto wolności sztuka nie może mieć istotnego ruchu i życia",
+ fakt:"Przy opustoszałym stole hotelu hrabia della Brenta mówi o „trywialności” opowieści Toniego. Kawaler di San Luca, wenecki doktor, uważa, że lord nie zasługuje na pośmiech. D... zawołał o papierze „czytelnym dla nosów policji”. Ktoś szepce „Papier! I czyli istotnie piśmienny papier?”. Dama wstaje, bierze dziecko i wychodzi. Narrator mówi, że nie zamierza naśladować takiego „jałowego przykładu” i że pisarz, który musi odrzucać treść rubaszną, nie wiadomo od czego jest artystą.",
+ narr:"Narrator wchodzi z komentarzem poetologicznym: dyskusja o granicach tematu w literaturze, w pierwszej osobie liczby mnogiej („nie zamierzamy tu w opowiadaniu naszem”).",
+ means:"Scena zbiorowa; komentarz o dziecku i pomarańczach; deklaracja artystyczna; przejście od plotki do sporu.",
+ znaczenie:"Odejście damy to gest moralnej ochrony dziecka, który narrator odrzuca jako „jałowy”. Dla narratora sztuka wymaga swobody mówienia o całości (także o nieczystości). To ważne dla odczytania noweli jako opowieści o swobodzie mówienia.",
+ alts:[
+  {l:"Teoria sztuki ukryta w noweli", t:"Narrator broni prawa do mówienia o wszystkim, co potem lord zrobi w mowie o czystości. [I]"},
+  {l:"Ironia narratora wobec konwencji obyczajowej", t:"Wzór dobrych manier (dama wychodzi) jest przedstawiony jako gest pusty. [I]"}],
+ pro:"Deklaracja narratora jest jawna i pada w środku akcji.",
+ con:"Narrator może mówić to także jako „poseł” własnego interesu (chce, by nowela była rubaszna); zwróć uwagę na ton („zaiste że niewiadomo”).",
+ q:"Wypisz, kto w tej scenie coś mówi, kto tylko szepce, kto wychodzi bez słowa. Jak narrator uzasadnia, że nie pójdzie za przykładem damy?",
+ tags:["P2","P3","P5"], th:["T4","T12"]},
+
+{id:"ST10", w:"T", loc:"rozdz. II, [469]–[470]", title:"Zakład o statek maskaradowy i delegacja",
+ quote:"Moje zachowanie się podczas sporu, do tej doszłego doniosłości, że być mogło zbyt obojętnem i wyłącznem, uważałem za właściwe przynajmniej kilkoma stosownemi wyrazy wziąć mój udział.",
+ fakt:"Po kłótni o cel lotów dochodzi do zakładu. Stawką jest złocony statek maskaradowy przygotowywany na dzień św. Marka. Narrator, dotąd obojętny, włącza się: proponuje odwołać się do samego lorda, więc zostaje delegatem (w delegacji: D..., hrabia della Brenta, kawaler di San Luca). Zbiera karty deputacji i posyła majordomowi. Majordomo odpowiada, wyznaczając godzinę przedśniadaniową następnego dnia.",
+ narr:"Zmiana funkcji: narrator z obserwatora staje się uczestnikiem („ja”-delegat). Rzepczyński pokazuje „ironię podwójną”: wobec uczestników sporu i wobec konwencji, że narrator „popycha” akcję.",
+ means:"Przywołanie Rialto jako miary oczywistości; cytat z Arystofanesa; ton protokołu; humor sytuacyjny (ten, który wykazał słabą stronę, zostaje „użyty” do jej uzupełnienia).",
+ znaczenie:"Zakład obniża „wielką tajemnicę” do stawki w zabawie karnawałowej (statek maskaradowy). Jednocześnie daje narratorowi fabularny powód, by spotkać lorda.",
+ alts:[
+  {l:"Narrator jako „nowelopisarz” (Rzepczyński [T])", t:"Narrator dba o to, by nowela miała punkt kulminacyjny; sam ingeruje w fabułę."},
+  {l:"Narrator jako jeden ze „zgadobliwych”", t:"Chce poznać tajemnicę; w tej scenie dołącza do pozostałych. [I] — Rzepczyński pisze o tym w kontekście „niewiedzy narratora o tajemnicy”."}],
+ pro:"Narrator wprost mówi o swoim „udziale” i o tym, że delegacja pomoże rozstrzygnąć zakład.",
+ con:"To, że narrator uczestniczy, nie przesądza, że jest „taki sam jak inni”; zachowuje dystans (ironia w „doniosłości”).",
+ q:"Jak narrator opisuje własny udział? Co ten opis mówi o jego stosunku do sporu, zakładu i innych uczestników?",
+ tags:["P2","P3","P4"], th:["T3","T10"],
+ mn:"Z Twoich notatek: „narrator staje się bezpośrednim uczestnikiem” i „narrator zostaje delegatem Wenecji” (s. 6–7). Dobrze zauważone. Dopisz fragment i doprecyzuj: delegatem hotelowych biesiadników, nie całej Wenecji."},
+
+{id:"ST11", w:"T", loc:"rozdz. II, [470]", title:"Salon lorda i „misja” Wenecji",
+ quote:"Czas miałem spojrzeć dookoła, to unosząc wrażenie, że najmniejszego śladu ani użytkowania, ani życia w tym salonie wcale nie było.",
+ fakt:"Przed spotkaniem narrator opisuje, jak Wenecja „ma misję” pokazywać człowiekowi, że istnieje „fantastyczna sfera życia”: plac może być salonem, cztery konie z brązu mogą „igrać” na kościele. Następnego dnia delegacja wchodzi do salonu: brak książki, nut, albumu, karty wizytowej; mozaikowa posadzka i lustra „odzwierciadlają wszystkość”, jaśniej niż uroczo. Lord wchodzi, majordomo ustawia fotele.",
+ narr:"Narrator przechodzi od uogólnienia o Wenecji do dokładnego opisu wnętrza. Zauważa brak śladów życia.",
+ means:"Anafora i uogólnienie („że plac może być salonem…”); opis przestrzeni jako lustra; ceremoniał.",
+ znaczenie:"Wnętrze lorda jest przeciwieństwem Wenecji: puste, lśniące, bez śladu użycia. Pokazuje bohatera jako człowieka, którego czystość zakłada brak ciała i śladów. [I]",
+ alts:[
+  {l:"Salon jako obraz idei czystości", t:"Lustra i posadzka odbijają wszystko, a nic nie zostaje: wnętrze podporządkowane jednej idei. [I]"},
+  {l:"Kontrast z Wenecją „fantastyczną”", t:"Miasto jest wielokulturowe i pełne zabawy, salon jest sterylny. [I]"}],
+ pro:"Narrator wprost zauważa brak śladu życia, nie tylko luksusu.",
+ con:"Pusty salon może być też po prostu wynajętym apartamentem w hotelu (lord dopiero co przybył).",
+ q:"Co w opisie salonu mówi o lordzie, a co może wynikać z tego, że to apartament hotelowy? Jak to się łączy z poprzednim akapitem o „misji” Wenecji?",
+ tags:["P1","P3","P5"], th:["T5","T7"]},
+
+{id:"ST12", w:"T", loc:"rozdz. II, [470]–[471]", title:"Mowa delegata i odpowiedź lorda: czystość jako cel",
+ quote:"Przyczyną główną codziennego używania aeronaucji jest moje pojęcie o czystości, — celem jest czystość.",
+ fakt:"Delegat przedstawia dwie szkoły (meteorologia, higiena) i zakład. Lord odpowiada, że żadna nie wygra: meteorologia należy do jego aeronauty, higienę (żołądkową) ma uregulowaną przed lotami, ale „cel wszelako onychże nie jest z tej sfery”. Przyznaje, że tajemnice muszą być (ludzie śmieją się z tego, czego od razu nie pojmują, więc pozostaje milczeć). Wyjaśnia: przyczyną jest jego pojęcie o czystości.",
+ narr:"Narrator relacjonuje mowę lorda w całości jako cytat. Ocena pojawi się dopiero na końcu (obłąkanie, „manja”).",
+ means:"Ton uroczysty, uprzejmie sarkastyczny; konstrukcja przeczenia (ani… ani…); odwrócenie spodziewanej odpowiedzi.",
+ znaczenie:"Lord odrzuca oba domysły, a wskazuje cel, który nikogo nie satysfakcjonuje. Rzepczyński pisze: tajemnica mimo wyjaśnienia pozostaje tajemnicą, a właściwa tajemnica dotyczy wartości i sposobu wystąpienia lorda. W wypowiedzi pojawia się porównanie Europejczyków z grupą ludzi, którego dziś nie przyjmujemy, a które charakteryzuje język epoki i postać mówiącą.",
+ alts:[
+  {l:"Lord jako ekscentryk z logiką własną (Rzepczyński [T])", t:"Postać nakreślona „z nachyleniem ku grotesce”; trudno widzieć w niej nośnik wartości aprobowanych przez autora. Lord nie ma tajemnicy, ale na nią wskazuje."},
+  {l:"Czystość jako program (Gomulicki za Kącką [B])", t:"Kącka cytuje Gomulickiego, który łączy nowelę z „filozofią nieczystości” i krytyką cywilizacji XIX w."}],
+ pro:"Lord wprost podaje przyczynę i cel; wypowiedź jest wewnętrznie spójna.",
+ con:"Narrator, a później doktor, nie traktują tego jako rozwiązania; lord jest przedstawiony z komizmem (chustka, powolność).",
+ q:"Rozdziel w mowie lorda: co odrzuca, co przyjmuje, co dopiero wprowadza. Jakie ma znaczenie, że mówi o tajemnicy w kontekście śmiechu i milczenia?",
+ tags:["P2","P3","P5"], th:["T2","T5","T12"],
+ mn:"Z Twoich notatek: granatowe zaznaczenie „śmiech i jego źródło”: „ludzie śmieją się z tego, czego nie rozumieją” (s. 8). Zauważ, że to słowa lorda (postaci), a nie narratora. Sprawdź jeszcze, czy narrator w całej noweli to potwierdza."},
+
+{id:"ST13", w:"T", loc:"rozdz. II, [471]–[472]", title:"Protest: Ksantypa, kloaki i „niskość”",
+ quote:"Nieczystość jest to niskość!... Jest to niskość!...",
+ fakt:"Lord mówi, że miasta wznoszą się na kloakach, a wykwintne salony stoją na „podziemiach ciężkich i odrażających”. Municypalności walczą z kałem, ale „degradują ludzi”. Ogłasza protest. Przywołuje Ksantypę: jej wina polega na tym, że nie wylała urny perfum z okna i zrobiła to z niskiego stanowiska. „Nieczystość jest to niskość”. Na wysokości balonu nie ma nieczystości. Trefniś rzucił anegdotę o nieczystym papierze z balonu; lord odpowiada, że to z okna Ksantypy. „Czystość zależy na podniesieniu się, nieczystością jest poniżenie się”. Kończy: „Ludzie nie są jeszcze czyści... są dopiero perfumowani...” i ociera łzę.",
+ narr:"Narrator relacjonuje bez komentarza. Opisuje drobne gesty lorda (przecieranie kącika oka, ręka na ramieniu doktora). Dystans zachowany przez opis „ruchu nieprzyśpieszonego, ale nieco namiętnego”.",
+ means:"Dowód z mitu antycznego (Sokrates i Ksantypa) w wersji odwróconej; oś góra/dół jako argument; przerwy w mowie; scena łez przeciwstawiona śmiechowi („Kto ma błogą wolę śmiać się z tego, niechaj to pełni teraz”).",
+ znaczenie:"To klucz do osi wartości w noweli: góra jako czystość, dół jako nieczystość i poniżenie. Lord odwraca wartość: nieczystość to nie brud, tylko poniżenie człowieka. Pojawia się także wątek papieru: lord odrzuca anegdotę o papierze jako pochodzącą „z okna Ksantypy”, a nie z balonu.",
+ alts:[
+  {l:"Inwersja (Kącka [T])", t:"Wzniosłość i nieczystość wzajemnie się ujawniają; autorka czyta nowelę z użyciem „prawa inwersji” i proponuje tropy kontekstowe (Boyer, Wilde, Swift) jako hipotezy."},
+  {l:"Karnawałowy „dół” u Bachtina (hipoteza [H])", t:"Wątek „dołu” i ciała w mowie lorda (kloaki, fetor, Laokoon pod ulicami) można porównać z „materialno-cielesnym dołem”; sprawdź, czy funkcja jest ta sama (odnowa, ambiwalentny śmiech)."},
+  {l:"Groteska i obłąkanie", t:"Lord jest śmieszny i smutny jednocześnie; narrator po wszystkim mówi o „manii” i „obłąkaniu”. Nie wolno uznać jego mowy za jedyne przesłanie noweli. [I]"}],
+ pro:"Fragment daje oś semantyczną całego utworu: wysokość = czystość; poniżenie = nieczystość.",
+ con:"Lord płacze i prosi o śmiech; ton mowy jest groteskowy. To osłabia pewność, że jest rzecznikiem autora.",
+ q:"Co dla lorda znaczy „nieczystość”, a co dla Ciebie w zwykłym języku? Wskaż moment, w którym mowa lorda zmienia ton z wykładu na wyznanie.",
+ tags:["P3","P4","P5"], th:["T5","T11","T13"],
+ mn:"Z Twoich notatek: pomarańczowe „oś góra–dół” i uwaga: „góra oznacza wzniosłość i czystość, dół upodlenie i degradację” (s. 9); „najważniejszy fragment, wyrażenie ma znaczenie dosłowne, ale także symboliczne”. To najmocniejsza obserwacja z Twoich notatek. Teraz sprawdź ją krytycznie (kolumna „con”)."},
+
+{id:"ST14", w:"T", loc:"rozdz. II, [472]", title:"Po audiencji: „obłąkanie”, Toni i regata",
+ quote:"Raz tylko kilka znacznych grup obróciło spojrzenie swoje ku górze",
+ fakt:"Po mowie nastaje cisza, bije zegar. Narrator zauważa, że delegacja rozwiązała zakład, ale „zagajony płocho”. Pyta, do jakiego rodzaju „obłąkania” policzy się „manja” lorda; doktor di San Luca nie podnosi tego z taktu. Toni z większym zapałem głosi, że lord jest „mężem misji”, zwiastunem „wielkiej epoki nowej”, „puryfikacji”, czegoś w rodzaju amerykańskiego „revivalu”. Nadchodzi regata św. Marka: kanał pełen łodzi „z różnych epok”, tłum patrzy w wir „archeologicznego szału”. Tylko kilka grup spogląda w górę, gdzie gondolierzy wskazują „maleńki i mdły punkcik”. „Był to balon lorda Singelworth.”",
+ narr:"Narrator kończy bez własnej oceny: pada pytanie o obłąkanie, a puenta jest obrazem. Rzepczyński zauważa, że końcowy obraz nie przynosi puenty wprost i przenosi rozstrzygnięcie poza świat przedstawiony.",
+ means:"Obraz pionowy (punkt w niebie) zestawiony z poziomym tłumem; „archeologiczny szał” (maskarada epok); powrót Toniego z nową wersją; zakończenie w trzeciej osobie bez komentarza.",
+ znaczenie:"Zakład (statek maskaradowy) i tajemnica kończą się niczym: tłum patrzy na widowisko, lord jest „punkcikiem”. Interpretacja musi pochodzić od czytelnika. Dla P4: regata to prawdziwa scena karnawałowa (maskarady, flagi, tłum), a lord ponad nią.",
+ alts:[
+  {l:"Zakończenie jako parabola (Rzepczyński [T])", t:"Czytelnik „zgadobliwy” zostaje wśród tłumu; kompetentny odbiorca patrzy w górę i dostrzega istotę tajemnicy, nie anegdotę."},
+  {l:"Legenda miejska (Kącka [T])", t:"Autorka uważa, że zakończenie służy legendzie: tajemnicza aura lorda pozostaje nienaruszona."},
+  {l:"Karnawał bez lorda (hipoteza [H])", t:"Regata jest karnawałem, w którym lord nie uczestniczy; jego niewłaściwość tego świata może być sednem. Sprawdź to pojęciami Bachtina."}],
+ pro:"Zakończenie pozostawia pytanie o obłąkanie bez odpowiedzi; Toni zmienia wersję na „misję”.",
+ con:"Trzy lektury końcówki wykluczają się częściowo; potrzebny jest argument, która jest najlepiej uzasadniona przez tekst.",
+ q:"Jak zmienia się stosunek między „górą” a „dołem” w ostatnim akapicie? Kto patrzy w górę, kto nie? Którą z trzech interpretacji zakończenia uznasz za najlepiej uzasadnioną i dlaczego?",
+ tags:["P1","P4","P5"], th:["T6","T9","T15"],
+ mn:"Z Twoich notatek: „widowisko pokazuje, że tłum skupia się na niewiele znaczącym spektaklu” (s. 10). Zgadza się z uwagą Rzepczyńskiego o tłumie na regacie; sprawdź, kogo pomijasz: kilka grup jednak patrzy w górę."},
+
+/* ---------- BRANSOLETKA ---------- */
+{id:"SB1", w:"B", loc:"rozdz. I, [450]", title:"Ośmiokątny salon i obraz z Emaus",
+ quote:"Poważny ów przyjaciel mój stał przy mnie w oświeconym zlekka, ośmiokątnym salonie",
+ fakt:"Narrator stoi z „poważnym przyjacielem” przed starym obrazem „w stylu Rembrandta” (Chrystus łamiący chleb z dwoma uczniami; przypis wskazuje „Wieczerzę w Emaus”, Luwr). Ten mówi o „istocie czynu odważnego” i o dramacie życia. Wchodzi piękna kobieta; przyjaciel mówi „To jest Eulalja”, po chwili „Jest to Barbara herbu Strzemię”, a potem „Edgarda”.",
+ narr:"Narrator „milczy”, a przyjaciel „mówi”; narrator zbiera informacje od kogoś innego i dopiero wyciąga wnioski. Bardzo podobna konstrukcja wiedzy jak w „Tajemnicy…”: wiedza przez pośrednika.",
+ means:"Obraz w obrazie (Rembrandt); zmiana imion tej samej osoby; dygresja o czasie i życiu; dialog urywany.",
+ znaczenie:"Wprowadza temat tożsamości jako zależnej od nazw nadawanych przez otoczenie (Eulalja, Barbara, Edgarda). Wskazuje też temat patrzenia: obraz „oryginał czy kopia” zostaje bez rozstrzygnięcia („nie zastanawiałem się”).",
+ alts:[
+  {l:"Imiona jako role", t:"Chrzest, bierzmowanie i literatura nadają osobie trzy imiona. Pytanie, która „prawdziwa”. [I]"},
+  {l:"Obraz jako klucz do całej noweli", t:"Chrystus przemieniony w gospodzie, pojedyncza twarz podróżnego „chrystusowieje” (por. SB3). [I]"}],
+ pro:"Trzy imiona w jednej scenie są jawne i wyliczone.",
+ con:"Nie wiadomo, czy trzy imiona mają wspólną „funkcję” z lordem Singelworth. To hipoteza porównawcza.",
+ q:"Zbierz wszystkie imiona kobiety w tym fragmencie i powiedz, kto je nadaje i z jakiej okazji.",
+ tags:["P2","P3","P5"], th:["T14","T15"]},
+
+{id:"SB2", w:"B", loc:"rozdz. I, [450]–[451]", title:"Bal na końcu karnawału",
+ quote:"że tak świetnej i hucznej zabawy zaprawdę przez cały karnawału ciąg nikt nie widział, lecz to właśnie dlatego wydarzyło się, iż post się zbliżał.",
+ fakt:"Narrator rozmawia z Eulalją przy drzwiach sali balowej; muzyka, taniec, światło zachodzącego słońca. Rozmowa dotyczy karnawału: nigdy nie było tak świetnej zabawy, bo zbliża się post. Wychodząc, narrator siedzi w mdłym salonie i rozmyśla o imionach, karnawale i pokucie (post = czas sakramentu pokuty). Dochodzi „dobrze po północy”.",
+ narr:"Narrator mówi „ja milczałem”, „nie taiłem”, „rozmyślałem”, wprowadza porządek liturgiczny (karnawał/post) jako rama czasowa.",
+ means:"Przeciwstawienie karnawału i postu; muzyka i szelest jedwabiów jako tło; kolokwialność („nikt nie widział”).",
+ znaczenie:"To najbardziej oczywiste miejsce, w którym karnawał jest motywem fabularnym i kalendarzowym. Rozmowa ironicznie łączy szczyt zabawy z jej końcem.",
+ alts:[
+  {l:"Karnawał w sensie kalendarza", t:"Bal jest ostatnią okazją przed postem; fabuła zaczyna się w nocy ostatniej zabawy. [I]"},
+  {l:"Karnawał w sensie Bachtina (hipoteza [H])", t:"Wymaga sprawdzenia, czy tekst pokazuje odwrócenie hierarchii i ambiwalentny śmiech, czy tylko świecką zabawę przed pokutą."}],
+ pro:"Karnawał i post są wymienione wprost.",
+ con:"Obecność balu to nie karnawalizacja w sensie Bachtina; tutaj nie ma „ludowego” śmiechu, tylko salon.",
+ q:"Wypisz wszystkie miejsca, w których tekst wymienia karnawał lub post. Jak zmienia się ich znaczenie od początku do końca noweli?",
+ tags:["P4","P5"], th:["T9","T14"]},
+
+{id:"SB3", w:"B", loc:"rozdz. I, [451]", title:"Rembrandt, światło i „chrystusowienie”",
+ quote:"przemienia się i chrystusowieje",
+ fakt:"Narrator siedzi w ośmiokątnym salonie i patrzy na obraz. Zachwyca się światłocieniem: do Rembrandta „nikt, nawet i Rafael sam, nie znał światła”; Rembrandt odkrył „głęboką światła tkliwość i mistyczną logikę”. Mówi o zwykłym wyrazie twarzy podróżnego łamiącego chleb, który „chrystusowieje”.",
+ narr:"Narrator wykłada własną opinię o sztuce; to moment, w którym jest bliżej poety-krytyka niż uczestnika wydarzeń.",
+ means:"Dygresja estetyczna; opozycja Rafael/Rembrandt; neologizm „chrystusowieje”.",
+ znaczenie:"Zwykłe (podróżny w gospodzie) może się przemienić w wielkie. To odpowiada idei, którą Kącka nazywa „prawem inwersji” (wielkie w małym), ale w tej scenie to idea wyłożona wprost, nie ironiczna. [I]",
+ alts:[
+  {l:"Estetyczna zasada noweli", t:"Zwykła twarz z ulicy może pokazać boskość; przygotowuje scenę ze śmieciarzem i wiatykiem. [I]"}],
+ pro:"Tekst wprost wiąże „potoczny” wyraz twarzy z przemianą (chrystusowieniem).",
+ con:"To tylko jedna scena; porównanie z Kącką jest moim skojarzeniem, nie jej tezą o tym fragmencie.",
+ q:"Jak narrator rozróżnia Rafaela i Rembrandta? Co to ma wspólnego z późniejszymi scenami na ulicy?",
+ tags:["P2","P5"], th:["T14"]},
+
+{id:"SB4", w:"B", loc:"rozdz. II, [451]", title:"Znalezienie bransoletki",
+ quote:"Któraż święta zgubiła chwałę swoją?",
+ fakt:"O świcie narrator wychodzi, idzie ulicą i znajduje bransoletkę „złotem kołem”, jak „koła złote nad skroniami świętych”. Składa się z dwóch rogów obfitości; paszcze rogów jak potworów trzymają diamentowymi zębami dwie tarcze z napisami „Edgar” i „Eulalja”. Mówi, że „nie miał uczucia ciekawości, czyją znalazł zgubę”.",
+ narr:"Narrator opisuje przedmiot dokładnie, ale odrzuca ciekawość. To przeciwieństwo „zgadobliwości” z „Tajemnicy…”.",
+ means:"Porównanie do aureoli; ekfraza (opis przedmiotu); symbol (rogi obfitości z paszczami potworów); nazwy na tarczach.",
+ znaczenie:"Przedmiot łączy świętość (aureola) i pożądanie (złoto, diamentowe zęby). Narrator nie szuka właściciela mimo wskazówek.",
+ alts:[
+  {l:"Przedmiot-znak", t:"Bransoletka ma znaczenie w fabule (ślubne okowy złote), w symbolice (aureola i okowy) i w ironii (świętość kontra pieniądz). [I]"}],
+ pro:"Szczegóły opisu (aureola, paszcze, okowy) tworzą dwoistość.",
+ con:"Interpretacja symboliczna jest moim odczytaniem; w tekście bransoletka nazwana jest też „okową”.",
+ q:"Jak narrator opisuje bransoletkę i dlaczego odrzuca ciekawość? Porównaj to z postawą otoczenia wobec balonu lorda.",
+ tags:["P2","P3","P5"], th:["T14","T15"]},
+
+{id:"SB5", w:"B", loc:"rozdz. II, [451]", title:"Chłopiec śmieciarz",
+ quote:"chłopiec blade miał oblicze, jako kamienie bruku wapienne",
+ fakt:"Na pustej ulicy narrator widzi kilkuletniego śmieciarza z gasnącą latarką i hakiem większym niż wiek chłopca; kosz niepełny. Wozy ogrodników jadą na targ.",
+ narr:"Opis ze współczuciem, bez komentarza moralnego. Narrator tylko patrzy.",
+ means:"Porównanie do kamienia; kontrast haka i dziecka; ubogi pejzaż poranny.",
+ znaczenie:"Pojawia się „dół” miasta: ludzie od odpadków. Później to ich dom odwiedza narrator.",
+ alts:[{l:"Wątek „niskiego” i „wysokiego”", t:"Śmieciarz-dziecko stoi naprzeciw aureoli bransoletki i balu. [I]"}],
+ pro:"Zestawienie tej sceny z balem jest widoczne w kompozycji noweli (bal → ulica → dom śmieciarza).",
+ con:"Narrator nie wartościuje wprost; ocenę wprowadza czytelnik.",
+ q:"Co łączy tego chłopca z postaciami z balu i z poetą? Czy narrator na niego patrzy tak, jak ludzie patrzą na lorda?",
+ tags:["P3","P5"], th:["T14"]},
+
+{id:"SB6", w:"B", loc:"rozdz. II, [451]–[452]", title:"Wiatyk i dom śmieciarza",
+ quote:"jakoby tam był pochód króla wygnanego i ostatniego jakiego z panujących",
+ fakt:"Narrator słyszy dzwonek, widzi purpurowy niegdyś baldachim i proboszcza z Najświętszym Sakramentem (wiatyk) idącego do chorego. Klęka. Idą do niskiej izby „mającej podziemia podobieństwo, ale utrzymanej czysto”: to dom ojca chłopca-śmieciarza. Chory uśmiecha się i zasypia. Narrator zostawia żonie bransoletkę: mąż „znalazłby ją, gdyby był zdrów”, niech dowiedzą się, czyja, i oddadzą.",
+ narr:"Narrator uczestniczy w obrzędzie i oddaje bransoletkę. Zachowuje nieznajomość: nie wiemy, jak potraktuje sprawę.",
+ means:"Kontrast purpury i nędzy; porównanie do „króla wygnanego”; liturgia; czystość izby.",
+ znaczenie:"To „dół” podniesiony: najuboższa izba (czysta!) otrzymuje sakrament, a procesja jest „króla wygnanego”. Narrator wplątuje przedmiot z balu w ten świat.",
+ alts:[{l:"Wątek czystości (zestawienie z „Tajemnicą…”)", t:"Izba „utrzymana czysto” stoi obok idei czystości lorda; to hipoteza porównawcza. [H]"}],
+ pro:"Tekst zaznacza czystość izby wprost.",
+ con:"Narrator nie komentuje; łączenie z „Tajemnicą…” to moja hipoteza.",
+ q:"Zestaw trzy obrazy z tej sceny (baldachim, izba, śmieciarz). Jak każdy zmienia znaczenie „wysokiego” i „niskiego”?",
+ tags:["P3","P5"], th:["T14","T15"]},
+
+{id:"SB7", w:"B", loc:"rozdz. II, [452]", title:"Śniadanie z poetą",
+ quote:"Poetą nie jesteś, więc nie wiesz tego",
+ fakt:"Narrator idzie do poety (znajomy z ogrodu). Poeta w porannym ubraniu, z kartkami, mówi o bezsenności. Czyta „dziwnie piękne wiersze” o miłości „kobiety płochej”, po czym gniecie kartki. Gdy sługa wyjdzie, wołanie: „Eulalja!”. Edgar posłał już podarunki ślubne („okowy złote”). Narrator mówi, który śmieciarz znalazł zgubę; poeta woła: „Złotem go osypię!”.",
+ narr:"Narrator przyjmuje rolę słuchacza, ujawnia znalezisko, ale decyzje podejmują inni. Zdanie „Jestże się poetą, czyli raczej tylko bywa się?” to wtrącona refleksja.",
+ means:"Dialog; scena poety (autotematyczna); komiczna zmiana tonu (od poezji do „Złotem go osypię”).",
+ znaczenie:"Poeta zamienia sensowną wiadomość na gest wielkiego pana; ironizuje się „wielkie uczucie”. Powiązanie ze „wzniosłymi uczuciami” z tytułu pracy Kąckiej jest moim skojarzeniem.",
+ alts:[{l:"Ironia wobec poety", t:"Poeta jest zarazem wrażliwy i komiczny; jego „Eulalja!” wypowiedziane chrapliwie łączy uczucie i teatr. [I]"}],
+ pro:"Ironia wynika z kontrastu wierszy i reakcji na wiadomość.",
+ con:"Narrator darzy poetę sympatią („miły człowiek”), więc ironia nie jest jednoznaczna.",
+ q:"Wskaż dwa momenty, w których poeta zachowuje się w sposób teatralny. Co narrator o nich myśli?",
+ tags:["P2","P3"], th:["T10","T14"]},
+
+{id:"SB8", w:"B", loc:"rozdz. III, [452]–[453]", title:"Post, „Omen” i szczęśliwe zakończenie",
+ quote:"P. S. Eulalja poszła za bankiera i są szczęśliwi.",
+ fakt:"W czasie postu narrator choruje. Poeta wbiega: „Omen, Omen” i oznajmia, że Edgar jest odrzucony. Przez dłuższy moment zostają wołania („Płochość! Kokieterja! Eulalja!”). Wchodzi Eulalja w czarnej sukni z bankierem, zbierającym na tacę kwestę. Edgara nie ma, „z gniewu mnichem chciał zostać!”. Narrator wrzuca srebrną monetę. Wszyscy idą na kazanie „O sakramentach w ogólności”. Post scriptum: Eulalja wyszła za bankiera i są szczęśliwi.",
+ narr:"Narrator jest chory, a wiadomości dociera do niego z drugiej ręki. Zakończenie przesuwa ironię na P. S.",
+ means:"Przerwa w tekście (kreski); post scriptum jako lakoniczna puenta; kontrast „sakramentów w ogólności” i ślubu z bankierem.",
+ znaczenie:"Zakończenie ośmiesza „wzniosłość” historii (okowy złote, Edgar jako mnich) przez finansowe „szczęście”. Nie ma tu jawnej oceny; trzeba ją dopowiedzieć.",
+ alts:[{l:"Ironia strukturalna", t:"Fabuła pełna symboli kończy się trzeźwą informacją o małżeństwie z bankierem. [I]"}],
+ pro:"Puenta jest w P. S., czyli poza głównym tokiem.",
+ con:"Nie wiadomo, czy „szczęśliwi” jest ironią, czy zwykłą informacją. To otwarte pytanie.",
+ q:"Jak odczytasz „i są szczęśliwi” w kontekście całej historii? Podaj dwa odczytania i wskaż, co je różni.",
+ tags:["P2","P3","P4","P5"], th:["T10","T14","T15"]},
+
+/* ---------- AD LEONES! ---------- */
+{id:"SL1", w:"L", loc:"[473]", title:"Rzeźbiarz, charcica i Café-Greco",
+ quote:"ów rudobrody rzeźbiarz, który o godzinie zamknięcia prac chadzał prawie co wieczór do Café-Greco z wielką swoją charcicą kirgiskiego pochodzenia.",
+ fakt:"Nowela zaczyna się opisem rzeźbiarza i jego psa. Narrator wnioskuje o „umysłowej godności osoby” z doboru zwierzęcia (anegdota o generale Jominim i koniu). Charcica przeskakuje ciżbę chłopców i stoły w kawiarni, „żadnego poklasku nie oczekiwała”. Jest „cenną u wszystkich”.",
+ narr:"Narrator opisuje, wnioskuje i komentuje z ironicznym dystansem; mówi „dawać mógł mniemać”, „utrzymywać byłoby właściwem”.",
+ means:"Pseudonaukowy wywód o psach i ludziach; hiperbola zalet charcicy; ironia wobec fizjonomiki.",
+ znaczenie:"Już pierwsza scena pokazuje, jak z pozoru dowodzi się wartości człowieka po zwierzęciu (zewnętrznym znaku). To odpowiednik „zgadobliwości” z „Tajemnicy…”: wnioskowanie ze znaków.",
+ alts:[{l:"Ironia narratora wobec „czytania” ludzi", t:"Nowela od początku pokazuje wątpliwy sposób oceniania człowieka z zewnątrz. [I]"}],
+ pro:"Wniosek narratora zostaje zachwiany później (pies pozostaje szlachetny, rzeźbiarz sprzedaje dzieło).",
+ con:"Nie wiadomo, czy ironia obejmuje także narratora, czy tylko „obserwatorów” w kawiarni.",
+ q:"Jak narrator wnioskuje o rzeźbiarzu z psa? Jakie masz tego przykłady w „Tajemnicy…”?",
+ tags:["P2","P3"], th:["T13"]},
+
+{id:"SL2", w:"L", loc:"[473]–[474]", title:"Grupa kawiarniana: redaktor, śpiewak, malarz, turysta i guwerner",
+ quote:"dla kształcenia się w zapatrywaniu na rzeczy",
+ fakt:"Wokół rzeźbiarza stoi grupa: redaktor „Gazety beletrystyczno-politycznej”, śpiewak dający lekcje cudzoziemcom, malarz, młodzieniec-turysta (wysłany przez rodziców „dla kształcenia się w zapatrywaniu na rzeczy”) i jego guwerner. Redaktor „stylem człowieka pióra” przypomina szklane świdry, które naśladują wodę w paszczach gipsowych lwów. Guwerner nadużywa przymiotnika „scientyficzny” i pisze „Rzut oka...”. Narrator zauważa: w południowym mieście wiedza o ludziach jest „przezroczysta”.",
+ narr:"Narrator typizuje; używa metafor („szklane świdry”) i przypisuje redaktorowi „elokwencję”. Ironicznie ocenia styl.",
+ means:"Typizacja postaci; porównanie do fontanny z lwami (Ad leones w wersji gipsowej); powtarzalne słowo „scientyficzny”.",
+ znaczenie:"Redaktor i guwerner to ludzie, którzy mówią bez „życia” (jak woda z szkła). Zderzają się z rzeźbiarzem. To społeczność, która kształtuje dzieło sztuki.",
+ alts:[{l:"Krytyka języka publicznego", t:"Styl redaktora to pusta elokwencja; guwerner to pseudonauka. Porównaj z „zgadobliwością” i „scjentyficznie” w „Tajemnicy…”. [I]"}],
+ pro:"Słowo „scientyficzny” pojawia się w obu nowelach (tu w wersji guwernera, w „Tajemnicy…” u narratora).",
+ con:"To zbieżność leksykalna; sama nie dowodzi wspólnej koncepcji.",
+ q:"Wypisz cechy każdego członka grupy. Który z nich ma wpływ na los dzieła rzeźbiarza?",
+ tags:["P2","P3"], th:["T13","T15"]},
+
+{id:"SL3", w:"L", loc:"[474]", title:"Plac Hiszpański i przezwisko „Ad leones!”",
+ quote:"piękne jest (a północnym chłodnym nieznane stronom), ile się i jak się uprzedzająco przyczynia dobra wola publiczności do uzupełnienia i wprowadzenia w życie dzieła sztuki.",
+ fakt:"Plac Hiszpański i schody na Monte Pincio to „forum modelów”: tu wystarczy zbliżyć się, by usłyszeć o pracy każdego artysty. Wiadomo, że rzeźbiarz tworzy kolosalną grupę z dwoma chrześcijanami rzuconymi lwom za Domicjana. Koledzy wołają na niego „Ad leones!”, a on odpowiada gestem. Narrator chwali „dobrą wolę publiczności”, ale zaznacza, że szczęśliwy ten artysta, który umie ją „trzeźwo” przyjąć.",
+ narr:"Narrator uogólnia („w przezacnym Rzymie”; „północnym chłodnym nieznane stronom”). Porównuje Rzym i północ.",
+ means:"Obraz schodów jako ptaka; „forum modelów”; wołacz „Ad leones!” jako przezwisko i znak.",
+ znaczenie:"Rzym to miejsce, gdzie dzieło sztuki rośnie we wspólnej wyobraźni. To wprost krytyczna ocena opinii publicznej (dobrej woli, ale także nacisku).",
+ alts:[{l:"Rzym jako warunek noweli", t:"Miejsce publicznego mówienia o sztuce (Café-Greco, plac) umożliwia fabułę. [I]"}],
+ pro:"Tekst wymienia konkretne miejsca Rzymu (Café-Greco, Plac Hiszpański, Monte Pincio).",
+ con:"Nie wolno mieszać realiów historycznych z funkcją, jaką Norwid nadaje Rzymowi.",
+ q:"Co Rzym daje rzeźbiarzowi i dziełu w tej scenie? Porównaj z rolą Wenecji w „Tajemnicy…”.",
+ tags:["P1","P3"], th:["T7","T13"]},
+
+{id:"SL4", w:"L", loc:"[474]–[475]", title:"Narrator i „dwie głowy”",
+ quote:"Tej i tamtej oczy zwrócone są wgórę — — —",
+ fakt:"Narrator spotyka rzeźbiarza i redaktora rano w kawiarni. Zaproszony do pracowni, mówi, że to nie będzie dzieło ukończone. Pytany o własną pracę, mówi o „dwóch głowach”: jedna ma podnosić oczy ku niebu, druga ku sufitowi albo hakowi z świecznikiem. Obie patrzą wgórę; to zadanie go „umęczyło”. Rzeźbiarz opiera czoło na dłoni, redaktor kreśli kreski na marmurze.",
+ narr:"Narrator mówi o sobie jako „niezbyt wielkim” w sztuce; wypowiada dwuznaczne zdanie.",
+ means:"Dwuznaczność: dwie głowy patrzą w górę z odmiennych powodów (niebo/hak świecznika). Reakcja słuchaczy: milczenie.",
+ znaczenie:"To zagadka, którą słuchacze pomijają. Zdanie o dwóch głowach można odczytać jako ironiczny komentarz o różnicy między wzniosłym i przyziemnym spojrzeniem „wgórę”. [I]",
+ alts:[{l:"Autoironia narratora", t:"Narrator naśmiewa się z własnej „sztuki”; sądź, czy to zakamuflowana krytyka grupy. [I]"}],
+ pro:"Powiązanie z końcówką „Tajemnicy…” (spojrzenie w górę) jest widoczne w obrazie.",
+ con:"To zbieżność motywu; wymaga dowodu, że Norwid zamierzał to porównanie.",
+ q:"Co znaczy, że dwie głowy patrzą „wgórę” z dwóch różnych powodów? Jak reagują słuchacze i co to mówi o ich uwadze?",
+ tags:["P2","P3"], th:["T10","T15"]},
+
+{id:"SL5", w:"L", loc:"[475]–[476]", title:"Pracownia: glina, „Brawo” i Domicjan",
+ quote:"— Ad leones, ad leones! — wołał młody turysta.",
+ fakt:"W pracowni stoi wielka masa wilgotnej gliny — zaczęta grupa. Gdy rzeźbiarz zdejmuje mokre płótna, rozlegają się „Brawo, brawo”. Męska postać „obiecuje piękny tors”, dziewicza „dramatyczny obrót”, obie błogosławią znakiem krzyża „pro Christo”; lew to jeszcze bryła podobna do sprzętu. Turysta woła „Ad leones!”; malarz mówi, że jego własne dzieło „może to być Kleopatra, a może Wniebowzięcie”. Guwerner wskazuje bust: „Oto, zda mi się Domicjan!”. Rzeźbiarz kopniakiem odbija nos Cezarowi. Śpiewak i towarzysze śpiewają „Drżyjcie, tyrany świata”.",
+ narr:"Narrator relacjonuje z dystansem; zauważa, że „lew jest bryłą podobną do sprzętu”, co daje pozór wykończenia.",
+ means:"Komizm sytuacyjny; chór aplauzu; pieśń rewolucyjna; kopniak jako gest „teatralny”.",
+ znaczenie:"Dzieło „o męczeństwie” jest przyjmowane jak przedstawienie. Entuzjazm tłumu nie dotyka treści, tylko nastroju. Rzeźbiarz „nabiera tonu” wyzywającego świat do walki.",
+ alts:[{l:"Ironia sytuacyjna", t:"Rewolucyjna pieśń śpiewana przy przełamywaniu popiersia cesarza jest zabawą, nie czynem. [I]"}],
+ pro:"Wszyscy aplauzują, gdy dzieło jeszcze jest bryłą gliny.",
+ con:"Nie wiadomo, czy narrator widzi w tym tylko komizm, czy także dramat artysty.",
+ q:"Co dokładnie jest w tej scenie przedmiotem aplauzu? Jak różni się to od przedmiotu dzieła?",
+ tags:["P3","P4"], th:["T13"]},
+
+{id:"SL6", w:"L", loc:"[476]–[477]", title:"Usunięcie krzyży i klucz",
+ quote:"Na cóż koniecznie ten znak martwy",
+ fakt:"Redaktor sugeruje odjęcie krzyży z rąk figur, bo amerykański nabywca (np. „mojżeszowego wyznania”) mógłby nie kupić. Rzeźbiarz zwraca uwagę, że krzyże „załamują stosownie bieg głównych linij”. Narrator mówi o trudności wykonania ręki z krzyżem i nieopatrznie daje argument usunięcia. Rzeźbiarz odcina krzyż u mężczyzny. Guwerner „scientyficznie” sugeruje klucz w ręku kobiety (klucze św. Piotra, Apokalipsa). Rzeźbiarz formuje klucz. Gdy zaprotestuje, redaktor odpowiada: „Czy ta grupa jest dziełem historycznem?”, a guwerner mówi, że to mogą być „wcale nie chrześcijanie”.",
+ narr:"Narrator uczestniczy, ale jego uwaga „poszła” w złym kierunku. Zauważa „magiczne” działanie zbiorowości: „ogólny nakłon pojęć i uczuć, a zupełny brak rozumowanej protestacji”.",
+ means:"Logika „plastyczna” wzięta za argument; zmiana symbolu (krzyż → klucz); komizm sytuacyjny; zbiorowa presja.",
+ znaczenie:"Najbardziej wyraźna scena „inwersji”: sens dzieła zmienia się z męczeństwa na dowolną „walkę” i „zasługę”. Zbiorowość nie protestuje; autor jest współwinny.",
+ alts:[{l:"Sztuka i rynek", t:"Wartość dzieła zależy od nabywcy. [I]"},{l:"Wspólna wina", t:"Narrator niechcący pomaga w usunięciu symbolu; nie jest tylko obserwatorem. [I]"}],
+ pro:"Tekst wprost wskazuje, że narrator „otrzymał niezamierzony skutek” swoją uwagą.",
+ con:"To scena o sztuce i rynku; nie wolno ekstrapolować jej na całą noweli o religii.",
+ q:"Kto i jakim argumentem odejmuje krzyż, a kto wprowadza klucz? Czy narrator ponosi współodpowiedzialność?",
+ tags:["P2","P3","P5"], th:["T13","T15"]},
+
+{id:"SL7", w:"L", loc:"[477]–[478]", title:"Amerykanin i „Kapitalizacja”",
+ quote:"Grupa wyobraża Kapitalizację w sposób i wyrozumowany i przystępny...",
+ fakt:"Wchodzi Amerykanin, korespondent „wielkiego monitora Stanów Zjednoczonych”. Prosi o wyjaśnienie figur. Redaktor mówi, że mężczyzna to energia czynu, a kobieta zaleca swój udział. Amerykanin zauważa klucz w ręku kobiety i bryłę niżej (kufer) i orzeka, że kobieta to Oszczędność, że obok kufra powinny być narzędzia rolnicze, a grupa to „Kapitalizacja”. Rzeźbiarz dolepia sierp i dwa boki kufra. Na kartach spisują umowę: „Kapitalizacja” z białego marmuru za około 15.000 dolarów; rzeźbiarz podejmuje się wykonania za nieprzechodzące o wiele 75.000 lirów.",
+ narr:"Narrator opisuje dokładnie umowę. Komentarz ironiczny pojawia się w sposobie przytoczenia dokumentów.",
+ means:"Parodia interpretacji (alegoria zamieniona na „Kapitalizację”); dokumenty umowy; komizm niedopasowania (dolary/liry).",
+ znaczenie:"Dzieło o męczeństwie zostaje zdegradowane do alegorii oszczędności. Interpretacja nabywcy obiera kształt dzieła. Zobacz zbieżność z „Tajemnicą…”: interpretacja otoczenia kształtuje przedmiot, nie odwrotnie.",
+ alts:[{l:"Parabola o rynku sztuki", t:"Dzieło zależy od woli kupującego i opinii redaktora. [I]"}],
+ pro:"Zamiana „męczeństwa” na „Kapitalizację” jest jawnie pokazana.",
+ con:"Autor nie wskazuje wprost, że potępia Amerykanina; to postać karykaturalna, ale też rzeczowa.",
+ q:"Wypisz kolejne zmiany znaczenia grupy od „Ad leones!” do „Kapitalizacji”. Kto za każdą z nich odpowiada?",
+ tags:["P3","P5"], th:["T13","T15"]},
+
+{id:"SL8", w:"L", loc:"[478]", title:"„Trzydzieści srebrników” i sumienie",
+ quote:"— To tak, jak sumienie jest sumieniem — odpowiedziałem.",
+ fakt:"Gdy Amerykanin wychodzi, rzeźbiarz zarzuca mokre płótna na „Kapitalizację” i biegnie za gośćmi. Narrator czuje poniżenie ducha i słyszy „jęk”: wszystko, co się poczyna z „dziewiczego natchnienia myśli”, musi być sprzedane za sześć dolarów, czyli „trzydzieści srebrników”. Mówi do redaktora: „Jak to jednak daleko od wyznawców, i dla wyznania lwom rzuconych, do Kapitalizacji!”. Redaktor kreśli parasolem na bruku: „Redakcja nie jest telefonem… Redakcja jest redakcją…”. Narrator: „To tak, jak sumienie jest sumieniem”.",
+ narr:"Narrator wychodzi z roli obserwatora i oceniającego, powtarza słowa redaktora w ironicznej formule. Zakończenie nie daje rozwiązania.",
+ means:"Aluzja biblijna (trzydzieści srebrników; Hiob); tautologia „redakcja jest redakcją” jako ironiczne wykręcanie się; powtórzona formuła narratora.",
+ znaczenie:"Narrator nazywa wprost to, co do tej pory pokazywał: sprzedaż sensu. Puenta to tautologia, a nie argument; kończy się bez rozwiązania. [I]",
+ alts:[{l:"Moralny sąd narratora", t:"To rzadki moment, gdy narrator wprost wartościuje. [I]"},{l:"Bezradność", t:"Narrator tylko powtarza tautologię; nie wnosi żadnej siły oporu. [I]"}],
+ pro:"Zakończenie ma tę samą budowę co końcówka „Tajemnicy…”: brak rozstrzygnięcia.",
+ con:"Narrator tu jawnie ocenia, podczas gdy w „Tajemnicy…” zakończenie jest obrazem bez oceny; to ważna różnica.",
+ q:"Co narrator mówi wprost, a co zostawia czytelnikowi? Porównaj to z końcówką „Tajemnicy…” (rozdz. II, [472]).",
+ tags:["P2","P3","P5"], th:["T13","T15"]}
+];
+
+/* ===== ZAGADNIENIA OLIMPIJSKIE ===== */
+const PROBLEMS = [
+{id:"P1", name:"Wenecja i Włochy", off:"Obraz Wenecji w „Tajemnicy…” na tle „Bransoletki” i „Ad leones!”. W jaki sposób Norwid akcentuje włoski rodowód tych utworów? Dlaczego poeta umieścił ich akcję właśnie we Włoszech?",
+ know:[
+  "W „Tajemnicy…” Wenecja ma konkretne punkty: hotel pod Białym Lwem, wyspa Lido, plac św. Marka, Rialto, Wielki Kanał, Murano, pałace z wejściem od kanału i od tyłu (ST2, ST8, ST14).",
+  "Narrator wiąże cechy plotki z sytuacją polityczną: obcy rząd, nadzór policji, znaczenie gestu zamiast słowa (ST4). To najmocniejszy tekstowy argument, że Wenecja jest warunkiem zdarzeń, a nie tylko dekoracją.",
+  "Trzy różne role Wenecji w opracowaniach, które przeczytałem: archiwum pamięci i utraconej niezależności (Dambek-Giallelis), obraz współczesności, która szuka sensacji zamiast głębokich tajemnic (Rzepczyński), kamuflaż dla kontekstu paryskiego (Kącka).",
+  "„Ad leones!” dzieje się w Rzymie: Café-Greco, Plac Hiszpański, Monte Pincio (SL1, SL3). Narrator wprost porównuje „przezacny Rzym” i „północne chłodne strony”.",
+  "W „Bransoletce” (tekst Pini 1934) nie znalazłem nazwy miasta ani kraju. Są: „stolica”, karnawał i post, wzmianka o obrazie z Luwru w przypisie, wzmianka o Norymberdze. Czy akcja jest we Włoszech, trzeba ustalić (Komitet mówi o „włoskim rodowodzie” utworów)."],
+ q:[
+  "Co Wenecja daje fabule, czego nie dałoby inne miasto? (ćwiczenie A2.2)",
+  "Jak cenzura i obcy rząd wpływają na sposób mówienia postaci? (ST4, ST6)",
+  "Czym różni się rola Rzymu w „Ad leones!” od roli Wenecji? (SL3)",
+  "Jakie dowody (w tekście, nie w wiedzy o historii) przemawiają za tym, że „Bransoletka” jest nowelą „włoską”? (A2.5)"],
+ hyp:[
+  "[H] Wenecja i Rzym są miejscami, w których publiczna mowa i opinia wytwarzają sens (plac, kawiarnia, hotel). Dla „Bransoletki” trzeba sprawdzić, czy analogiczne miejsce publiczne istnieje.",
+  "[H] Wspólnym elementem włoskich nowel jest „niedojrzały” sąd zbiorowości o jednostce; to wymaga porównania wszystkich trzech tekstów."],
+ trap:["Mieszanie wiedzy o historycznej Wenecji z funkcją, jaką Norwid jej nadaje.","Twierdzenie „Bransoletka dzieje się we Włoszech” bez fragmentu.","Używanie jednego badacza (np. Kącki) jako „rozstrzygnięcia”, że Wenecja jest tylko maską Paryża."],
+ sc:["ST2","ST4","ST8","ST11","ST14","SL1","SL3","SB2"], srcs:["R","K","D"], ex:["A2.1","A2.2","A2.3","A2.4","A2.5"]},
+
+{id:"P2", name:"Narrator", off:"Kim jest narrator „Tajemnicy…”? Czy można go porównać do narratorów innych nowel Norwida? Co wynika z takiego porównania?",
+ know:[
+  "Narrator pisze wspomnienie („moje spomnienie zapisuję”) i na początku mówi o własnym zadaniu („nowela”, nie „romans”) (ST1).",
+  "W rozdziale I narrator jest świadkiem i komentatorem. W rozdziale II staje się uczestnikiem: proponuje odwołanie się do lorda i zostaje delegatem (ST10).",
+  "Rzepczyński [T] opisuje „podwójność” narratora: uczestnik zdarzeń oraz głos ironizujący na temat konwencji i wyjaśnień tajemnicy; autor uważa to za jednego narratora i dwa adresaty (odbiorca „zgadobliwy” i odbiorca kompetentny).",
+  "W „Bransoletce” narrator zdobywa wiedzę od „poważnego przyjaciela” i poety, sam „milczy” i „rozmyśla” (SB1). W „Ad leones!” narrator także jest uczestnikiem (niechcący pomaga w usunięciu krzyża), a pod koniec wartościuje wprost (SL6, SL8).",
+  "Ważna różnica: w „Tajemnicy…” narrator nie komentuje końcowego obrazu (ST14), w „Ad leones!” kończy ironiczną formułą o sumieniu (SL8)."],
+ q:[
+  "Co narrator wie, co jedynie przypuszcza, co dopowiada? (A1.1)",
+  "W którym miejscu narrator staje się uczestnikiem i jak zmienia to jego wiarygodność? (A1.2)",
+  "Co znaczy, że narrator pisze „wspomnienie”? Co z tego wynika dla wiedzy o lordzie? (A1.3)",
+  "Jakie typy narratorów występują w trzech nowelach i co je łączy? (A1.4, A1.5)"],
+ hyp:[
+  "[H] Narrator nie jest pewnym przewodnikiem; jego wiedza jest pośrednia (plotka, relacja), a jego komentarze ironizują zarówno otoczenie, jak i konwencję gatunkową.",
+  "[H] We wszystkich trzech nowelach narrator uczestniczy w zdarzeniach i zarazem je ocenia; w „Ad leones!” ocenia najjawniej."],
+ trap:["Utożsamianie narratora z Norwidem.","Przypisywanie narratorowi opinii lorda lub Toniego.","Pisanie „narrator wie wszystko” bez fragmentu, w którym wie, i fragmentu, w którym nie wie."],
+ sc:["ST1","ST3","ST5","ST9","ST10","ST14","SB1","SB8","SL4","SL6","SL8"], srcs:["R","D"], ex:["A1.1","A1.2","A1.3","A1.4","A1.5"]},
+
+{id:"P3", name:"Odmiany ironii", off:"Odmiany ironii w „Tajemnicy…” (postawa narratora, zachowanie lorda Singelworth, konstrukcja świata przedstawionego).",
+ know:[
+  "Ironia narratora: neologizm „zgadobliwość”, katalog „autorytetów”, komentarz o „masie” (ST3, ST5), deklaracja o „jałowym przykładzie” (ST9).",
+  "Ironia w zachowaniu lorda: powolne wyjęcie chustki, protest, który nikogo nie przekonuje; ton uroczysty wobec stawki w zakładzie o statek maskaradowy (ST12, ST13).",
+  "Ironia konstrukcji: tytuł obiecuje zagadkę, a nowela nie daje klasycznego rozwiązania; zakład rozstrzyga „płochy”, a tajemnica trwa (ST1, ST14). Rzepczyński [T] opisuje „ironię podwójną” narratora.",
+  "Ironia społeczna: mechanizm powszechnego uznania („Rzecz dziwna…”), znaczenie prestiżu nazwiska (D... z „wielkim weneckim nazwiskiem”).",
+  "Kącka [T] pokazuje, że czytanie ironii wymaga „odczytania na odwrót”: prawo inwersji (wielkie w małym, wysokie w niskim). Pytanie o autoironię (Skalińska) pozostaje otwarte: artykułu nie czytałem [N]."],
+ q:[
+  "Który rodzaj ironii jest głównym narzędziem narratora, a który lorda? (A3.1, A3.2)",
+  "Czy ironia pomaga dojść do prawdy, czy utrudnia jednoznaczny wniosek? (A3.5)",
+  "Czy narrator bywa przedmiotem ironii? (A3.4)",
+  "Jakiego rodzaju ironia pojawia się w zakończeniu „Ad leones!” (SL8) i „Bransoletki” (SB8)?"],
+ hyp:[
+  "[H] Ironia jest strukturą całej noweli, nie tylko środkiem stylu: dotyczy narratora, bohatera i czytelnika.",
+  "[H] Ironia nie prowadzi do jednej odpowiedzi; zostawia pytanie o tajemnicę otwarte."],
+ trap:["Nazywanie ironią każdego żartu lub paradoksu.","Nazywanie jakiegoś fragmentu ironią bez wskazania, co jest powiedziane i co zasugerowane.","Mylenie ironii z szyderstwem."],
+ sc:["ST3","ST5","ST6","ST9","ST12","ST13","SB7","SB8","SL5","SL7","SL8"], srcs:["R","K"], ex:["A3.1","A3.2","A3.3","A3.4","A3.5"]},
+
+{id:"P4", name:"Karnawał i Bachtin", off:"Motyw karnawału w „Bransoletce” i „Tajemnicy…” w świetle koncepcji Michaiła Bachtina.",
+ know:[
+  "W „Tajemnicy…” karnawał pojawia się jako regata św. Marka i maskaradowy statek („archeologiczny szał”, ST10, ST14) oraz jako improwizator-arlekin Toni (ST6, ST7).",
+  "W „Bransoletce” karnawał jest wymieniony wprost (bal na jego zakończenie) i zestawiony z postem (SB2, SB8).",
+  "Bachtina w oryginale jeszcze nie czytałaś ani ja. Wszystko poniżej to hipotezy [H], które trzeba sprawdzić po lekturze fragmentów „Twórczości Franciszka Rabelais'go…” (kolejność: najpierw pojęcia u Bachtina, potem test na nowelach).",
+  "Elementy do przetestowania: odwrócenie hierarchii (D... ze „wielkim nazwiskiem” przy stole; improwizator-błazen wobec władzy); śmiech i degradacja (Toni o Piombi z góry, SB: śmieciarz i baldachim); groteska (lord, kloaki, Laokoon pod miastem); „dół” materialno-cielesny (nieczystość, higiena); nieoficjalny obraz świata (Toni jako komentator pod cenzurą, Rzepczyński [T])."],
+ q:[
+  "Co znaczy karnawał u Bachtina? Zapisz własnymi słowami po lekturze. (A4.1)",
+  "Czy regata w „Tajemnicy…” spełnia kryteria karnawalizacji? (A4.2)",
+  "Co w „Bransoletce” jest karnawałem, a co tylko kalendarzem? (A4.3)",
+  "Gdzie teoria Bachtina pomaga, a gdzie przeszkadza? (A4.4)"],
+ hyp:[
+  "[H] Toni di Bona Grazia to postać „karnawałowa” (błazen, arlekin, nieoficjalny głos), a lord to postać „antykarnawałowa” (ponad tłumem, powaga mimo groteski).",
+  "[H] Śmiech w „Tajemnicy…” jest zbyt wąski społecznie (salon, hotel), by uznać go za śmiech ludowy Bachtina."],
+ trap:["Utożsamianie obecności maskarady z karnawalizacją.","Używanie pojęć Bachtina bez ich źródłowego znaczenia.","Pisanie, że „śmiech jest karnawałowy”, bez rozróżnienia kto, z czego i po co się śmieje."],
+ sc:["ST6","ST7","ST10","ST13","ST14","SB2","SB6","SB8"], srcs:["B"], ex:["A4.1","A4.2","A4.3","A4.4"]},
+
+{id:"P5", name:"Przesłanie noweli i granice interpretacji", off:"Przesłanie noweli.",
+ know:[
+  "Rzepczyński [T]: nowela przenosi punkt ciężkości z tajemniczego na sposób istnienia tajemnicy; lord, choć nie ma tajemnicy, na tajemnicę wskazuje; nowela ma być parabolą, nie anegdotą.",
+  "Kącka [T]: tekst można czytać jako ironiczną grę z „prawem inwersji”; autorka proponuje kilka tropów kontekstowych (Boyer, Wilde, Swift), sama oznaczając je jako hipotezy niemożliwe do dowiedzenia.",
+  "Dambek-Giallelis [T]: lord może być „personą”, maską tworzoną przez opinię (i przez Toniego); autorka zestawia go ze znaną postacią biograficzną (Byron, Solomos) tylko jako hipotezą; wskazuje komplementarność Toniego i lorda.",
+  "Siedem hipotez z opisu zagadnienia (osądzanie, granice wiedzy, wzniosłość-cielesność, pozory cywilizacji, ironia, jednostka-zbiorowość) wymaga testu na tekście; poniżej, w zakładce Tezy, są argumenty i kontrargumenty.",
+  "Wniosek tymczasowy z mojej lektury: tekst nie wskazuje jednej odpowiedzi; to wynika z jego konstrukcji, więc niejednoznaczność jest elementem sensu [I]."],
+ q:[
+  "Które z hipotez najlepiej tłumaczą wszystkie sceny, a które tylko część? (A5.3)",
+  "Co w tekście przemawia za tym, że lord nie jest rzecznikiem autora? Co przemawia przeciw? (A5.2)",
+  "Czy „tajemnica” z tytułu to zagadka do rozwiązania, czy kategoria poznawcza? (A5.1)",
+  "Jak zbudować wypracowanie, które porównuje dwie interpretacje? (A5.4–A5.6)"],
+ hyp:[
+  "[H] Najlepiej uzasadnioną odpowiedzią jest połączenie hipotez: nowela pokazuje, jak zbiorowość wytwarza tajemnicę i jak odrzuca to, czego nie rozumie, a lord jest figurą sprzeczną (wzniosłą i groteskową).",
+  "[H] Skuteczne wypracowanie to to, które pokaże granicę interpretacji, czyli co jest nierozstrzygalne."],
+ trap:["Efektowne rozwiązanie tajemnicy bez tekstowego uzasadnienia (np. „lord to Byron”).","Traktowanie jednego opracowania jako prawdy.","Mówienie, że „nowela mówi, że…”, zamiast „z fragmentu X wynika, że…”."],
+ sc:["ST1","ST5","ST7","ST12","ST13","ST14","SB8","SL7","SL8"], srcs:["R","K","D"], ex:["A5.1","A5.2","A5.3","A5.4","A5.5","A5.6"]}
+];
+
+/* ===== TEZY ===== */
+const THESES = [
+{id:"T1", p:"P5", conf:"I", text:"Tajemnica noweli powstaje w reakcjach otoczenia na zachowanie lorda, a nie w samym zachowaniu.",
+ pro:"Wersje felietonisty, generała i profesora są równorzędnie niepewne; „zgadobliwość” otoczenia generuje plotki, zakład i legendę (ST3, ST5). Rzepczyński [T] pisze o dwóch sposobach funkcjonowania tajemnic: jako motywy i jako reakcje na nie.",
+ con:"Lord sam mówi, że ma cel („celem jest czystość”) i że jest on „z innej sfery” niż domysły (ST12). Czyli istnieje coś, czego otoczenie nie odgaduje.",
+ alt:"Tajemnica leży w wartości, którą lord wskazuje, ale której nikt nie przyjmuje (Rzepczyński [T]: „właściwa tajemnica kryje się w nazwisku lorda i w sposobie jego wystąpienia”).",
+ limit:"Tekst nie mówi, czy cel lorda jest „prawdziwy”, czy tylko jego własna konstrukcja.", sc:["ST3","ST5","ST12"], src:["R"]},
+{id:"T2", p:"P5", conf:"T", text:"Wyjaśnienie lorda nie rozwiązuje tajemnicy; nowela kończy się bez konkretnej odpowiedzi.",
+ pro:"Wyjaśnienie nikogo nie zadowala, narrator pyta o „obłąkanie”, doktor milczy, a Toni głosi własną wersję (ST14). Rzepczyński [T] pisze: tajemnica mimo wyjaśnienia pozostaje tajemnicą.",
+ con:"Lord jasno przedstawia swoje pojęcie czystości; to kompletna odpowiedź na pytanie „po co latasz?”. To, że nie przekonuje, nie znaczy, że jej nie ma.",
+ alt:"Wyjaśnienie rozwiązuje zagadkę, ale nie tajemnicę (pojęcia z Rzepczyńskiego: zagadka vs tajemnica).",
+ limit:"Tekst nie rozstrzyga, czy zakład został wygrany (kto miał rację).", sc:["ST12","ST13","ST14"], src:["R"]},
+{id:"T3", p:"P2", conf:"T", text:"Narrator ma podwójną funkcję: uczestnika zdarzeń i komentatora konwencji.",
+ pro:"W rozdz. II zostaje delegatem (ST10); jednocześnie ironizuje o „romansopisarzach” i o „zgadobliwości” (ST1, ST3). Rzepczyński [T] opisuje to jako „podwójność sposobu istnienia” jednego narratora.",
+ con:"To może być po prostu retrospekcja: „ja” z przeszłości (delegat) i „ja” piszące wspomnienie (komentator), a nie dwie funkcje (Dambek-Giallelis [T] podkreśla charakter wspomnieniowy noweli).",
+ alt:"Narrator jest jednocześnie świadkiem i rzecznikiem autora (wg Rzepczyńskiego: narrator-bohater i narrator autorski).",
+ limit:"Tekst nie pozwala ustalić, ile czasu minęło między wydarzeniami a ich zapisaniem.", sc:["ST1","ST10"], src:["R","D"]},
+{id:"T4", p:"P5", conf:"I", text:"Papier z balonu jest znakiem pustym, który ludzie wypełniają własnymi domysłami.",
+ pro:"Toni mówi o „papierze niezapisanym”, który „miał wytłumaczyć wszystko”; D... mówi o papierze „czytelnym dla nosów policji”; szeptem: „czy istotnie piśmienny?” (ST7, ST9).",
+ con:"Kącka [T] czyta ten papier jako konkretny odpadek („fizjologiczna treść”), a to czyni go znakiem pełnym (Wilde, Boyer jako hipotezy kontekstowe). Lord sam odrzuca anegdotę o papierze jako „z okna Ksantypy” (ST13).",
+ alt:"Papier jest elementem „czytania z odpadków” (palimpsest), czyli motywem karnawałowym (hipoteza [H]).",
+ limit:"Tekst nie mówi, co dokładnie spadło z balonu, ani czy w ogóle coś spadło.", sc:["ST7","ST9","ST13"], src:["K","R"]},
+{id:"T5", p:"P5", conf:"I", text:"Oś wartości w noweli to opozycja góra–dół: wysokość oznacza czystość, niskość oznacza nieczystość.",
+ pro:"Mowa lorda: „nieczystość jest to niskość”, „czystość zależy na podniesieniu się” (ST13). Końcowy obraz „maleńkiego punkciku” w górze (ST14). Twoje notatki z kolorem pomarańczowym: oś góra–dół.",
+ con:"Lord jest przedstawiony groteskowo (łzy, chustka, powolność); jego racje może podważać sama konstrukcja noweli. Rzepczyński [T] pisze, że trudno w nim widzieć nosiciela wartości autora.",
+ alt:"Oś góra–dół to rozumowanie lorda, które nowela pokazuje, ale nie musi go przyjmować (czytanie ironiczne).",
+ limit:"Tekst nie mówi, czy ostatni obraz potwierdza, czy ironizuje tę oś.", sc:["ST11","ST12","ST13","ST14"], src:["R","K"]},
+{id:"T6", p:"P5", conf:"T", text:"Nowela jest parabolą o istocie tajemnicy, a nie anegdotą o dziwacznym lordzie.",
+ pro:"Rzepczyński [T]: zadaniem noweli jest przekształcenie odbiorcy „zgadobliwego” w kompetentnego, który widzi nie anegdotę, ale parabolę. Końcowy obraz ma być „punktem wyjścia interpretacji”.",
+ con:"Parabola wymaga wskazania, co jest „odpowiednikiem” czego; łatwo nadinterpretować. Kącka [T] podkreśla, że tekst jest też świadomie zabawny i „legendotwórczy”.",
+ alt:"Nowela jako legenda miejska (Kącka [T]): aura tajemnicy ma pozostać nienaruszona.",
+ limit:"Tekst nie podaje klucza do paraboli; to hipoteza interpretatora.", sc:["ST3","ST14"], src:["R","K"]},
+{id:"T7", p:"P1", conf:"I", text:"Wenecja jest warunkiem zdarzeń w noweli, a nie tylko dekoracją.",
+ pro:"Narrator tłumaczy sposób działania plotki ustrojem Wenecji (ST4); Toni działa jako improwizator pod cenzurą (ST6); Wenecja ma „misję” być sferą fantastyczną (ST11).",
+ con:"Kącka [T] pisze, że kontekst paryski jest silniejszy, a Wenecja bywa kamuflażem; narrator mówi, że plotek jest tu „więcej niż w innem jakiem mieście”, czyli nie tylko tu.",
+ alt:"Wenecja jako archiwum pamięci i utraconej niezależności (Dambek-Giallelis [T]).",
+ limit:"Tekst nie mówi wprost, dlaczego autor wybrał Wenecję.", sc:["ST4","ST6","ST8","ST11"], src:["D","R","K"]},
+{id:"T8", p:"P3", conf:"T", text:"Toni di Bona Grazia jest nieoficjalnym komentatorem rzeczywistości, którego mowa ma podwójnego adresata.",
+ pro:"Rzepczyński [T]: Toni jako „mądry błazen”; mowa dla „słuchających” i „podsłuchujących”; kichnięcie i chustka jako gest. Dambek-Giallelis [T] cytuje Dąbrowicz: mowa Ezopowa pod cenzurą.",
+ con:"Narrator nazywa jego mówienie „wulgarnym”; Dambek-Giallelis pyta, czy Toni nie jest też „ukrytym sprawcą” legendy lorda, a to czyni go aktorem, nie tylko komentatorem.",
+ alt:"Toni jest tylko komicznym plotkarzem; jego „podwójny adres” to nadinterpretacja.",
+ limit:"Tekst nie mówi, czy gesty Toniego są celowymi sygnałami.", sc:["ST6","ST7"], src:["R","D"]},
+{id:"T9", p:"P4", conf:"H", text:"Karnawał w noweli to scena regaty i postać Toniego, ale lord stoi poza karnawałem.",
+ pro:"Regata jako „wir archeologicznego szału”; zakład o statek maskaradowy; Toni w stroju arlekina; lord „maleńkim punktem” ponad tłumem (ST6, ST10, ST14).",
+ con:"Do sprawdzenia z Bachtinem: czy śmiech tłumu jest ambiwalentny (odnawiający), czy tylko powierzchowny; czy hierarchia jest odwrócona, czy tylko zawieszona; nadzór austriackiej policji ogranicza „swobodę” karnawału.",
+ alt:"Brak karnawalizacji: obecność maskarady to tylko tło; wtedy motyw jest ozdobą.",
+ limit:"Teza jest hipotezą do czasu lektury Bachtina.", sc:["ST6","ST7","ST10","ST14"], src:[]},
+{id:"T10", p:"P3", conf:"I", text:"Ironia „podwójna” narratora dotyczy zarówno uczestników sporu, jak i konwencji literackiej.",
+ pro:"Rzepczyński [T] wskazuje podwójność ironii w scenie delegacji. Narrator mówi o sobie „moje zachowanie… zbyt obojętnem i wyłącznem” (ST10) oraz o „nowelopisarzu” (ST1).",
+ con:"Autoironia (Skalińska) jest odrębną hipotezą: czy narrator ironizuje też siebie? Artykułu nie czytałem [N]; nie wolno tu przypisywać Skalińskiej tez.",
+ alt:"Ironia narratora jest tylko ironią wobec otoczenia.",
+ limit:"Tekst nie pozwala rozstrzygnąć, czy narrator wie, że jego „udział” jest komiczny.", sc:["ST1","ST10","SB7","SL4"], src:["R"]},
+{id:"T11", p:"P3", conf:"T", text:"Prawo inwersji (wielkie w małym, wysokie w niskim) tłumaczy zderzenie wzniosłej idei lorda z trywialnym tłem.",
+ pro:"Kącka [T] definiuje prawo inwersji jako zasadę semiotyczną Norwida; mowa lorda stawia nieczystość na przeciwnym biegunie wzniosłych uczuć (ST13).",
+ con:"Autorka sama oznacza swoje konteksty (Boyer, Wilde, Swift) jako hipotezy; teza o „fizjologicznym” papierze jest niedowodliwa. Inwersja bywa nadużywana jako klucz do wszystkiego.",
+ alt:"Interpretacja bez inwersji: skupienie na mechanizmie plotki i narracji (Rzepczyński [T]).",
+ limit:"Kącka mówi o „może” i „być może”; nie wolno przedstawiać jej tez jako ustaleń.", sc:["ST12","ST13"], src:["K"]},
+{id:"T12", p:"P5", conf:"I", text:"Nowela pokazuje mechanizm odrzucania tego, czego się nie rozumie, przez śmiech i plotkę.",
+ pro:"Lord: ludzie śmieją się z tego, czego od razu nie pojmują, więc „pozostawa milczeć” (ST12). Reakcje otoczenia: szyderstwo, zakład, pośmiech (ST5, ST9).",
+ con:"To słowa postaci groteskowej; porównanie użyte w tym zdaniu świadczy o języku epoki i charakterze mówiącego, nie o narratorze.",
+ alt:"Nowela krytykuje cywilizację higieniczną, nie śmiech (Gomulicki za Kącką [B]).",
+ limit:"Nie wiadomo, czy narrator podziela diagnozę lorda.", sc:["ST5","ST9","ST12"], src:["R"]},
+{id:"T13", p:"P2", conf:"I", text:"W „Ad leones!” interpretacja otoczenia kształtuje dzieło sztuki; to analogia do „Tajemnicy…”, w której opinia otoczenia tworzy lorda.",
+ pro:"Zmiana „Ad leones!” w „Kapitalizację” przez kolejne uwagi (SL6–SL7); w „Tajemnicy…” kolejne wersje (ST5). Oba teksty mają zakończenie bez rozstrzygnięcia.",
+ con:"„Ad leones!” dotyczy rynku sztuki, „Tajemnica…” poznania; analogia jest zbyt ogólna, by być tezą bez dodatkowych argumentów.",
+ alt:"Wspólny motyw to „zgadobliwość” obu środowisk: kawiarni artystów i hotelu.",
+ limit:"Tekst nie pozwala ustalić, czy Norwid pomyślał oba utwory jako parę.", sc:["SL1","SL2","SL6","SL7","SL8","ST5"], src:["R"]},
+{id:"T14", p:"P4", conf:"H", text:"W „Bransoletce” „wysokie” i „niskie” zostają zestawione w sposób bliski inwersji: aureola-bransoletka, wiatyk w izbie śmieciarza, bal i post.",
+ pro:"Bransoletka porównana do aureoli (SB4), wiatyk w nędznej izbie (SB6), karnawał i post (SB2, SB8).",
+ con:"Narrator nie komentuje; porównanie z Kącką jest moim skojarzeniem. Nie wiadomo, czy to ironia, czy poważne wyrażenie.",
+ alt:"„Bransoletka” jako moralitet o bogactwie i pokorze (czytanie religijne).",
+ limit:"Nie wiem, co o „Bransoletce” piszą badacze z listy; nie czytałem ich.", sc:["SB2","SB4","SB5","SB6","SB8"], src:[]},
+{id:"T15", p:"P5", conf:"I", text:"We wszystkich trzech nowelach Norwid „unieważnia” motywy realne: wydarzenia i przedmioty tracą pierwotną rolę, a ważne staje się to, co z nich robi zbiorowość.",
+ pro:"Rzepczyński [T] pisze o dążeniu Norwida do „uniewaznienia” motywów realnych w nowelach „włoskich”. Przykłady: papier z balonu (ST7), bransoletka (SB4), grupa „Ad leones” (SL7).",
+ con:"Rzepczyński mówi to w kontekście „Tajemnicy…” i krótko o pozostałych nowelach; nie wiem, czy rozwija to w książce „Wokół nowel włoskich” [N].",
+ alt:"Każda nowela ma własną poetykę; wspólna formuła spłaszcza różnice.",
+ limit:"Potrzebna lektura Rzepczyńskiego (1996) i porównanie scen.", sc:["ST7","SB4","SL7","ST14","SB8","SL8"], src:["R"]}
+];
+
+/* ===== OPRACOWANIA (kartoteka) ===== */
+const SOURCES = [
+{id:"R", status:"T", cite:"Sławomir Rzepczyński, O umyśle „zgadobliwym”. „Tajemnica lorda Singelworth”, Studia Norwidiana 14 (1996), s. 105–112",
+ where:"PDF w repozytorium czasopisma (ojs.tnkul.pl)", url:"https://ojs.tnkul.pl/index.php/sn/article/download/9683/9741",
+ tezy:[
+  "Nowela jest „utkana z tajemnic”: motywów (lord, balon, papier, osoby, Wenecja) i reakcji na nie (plotki, domysły, śmiech, zakład).",
+  "„Zgadobliwość umysłu” to ironiczna diagnoza przeciętnego poziomu myślenia XIX w. i chwytliwej literatury; ostrze nie uderza w samo zgadywanie, lecz w użytek, jaki się z niego robi.",
+  "Tytuł przywołuje konwencję powieści tajemnic; rozczarowanie czytelnika przenosi uwagę z tego, co przedstawiane, na tego, kto przedstawia.",
+  "Toni di Bona Grazia jest „mądrym błaznem” i nieoficjalnym komentatorem; mowa ma podwójnego adresata (słuchających i podsłuchujących).",
+  "Narrator istnieje „podwójnie” (jako uczestnik i jako głos ironizujący); to jeden narrator wobec dwóch typów odbiorcy.",
+  "Wyjaśnienie lorda nie satysfakcjonuje; tajemnica mimo wyjaśnienia pozostaje tajemnicą; lord, choć nie ma tajemnicy, na nią wskazuje.",
+  "Nowela ma być parabolą, a Wenecja jako „znudzona dama” oddaje współczesność szukającą sensacji zamiast głębokich tajemnic."],
+ loc:"Tytuł i „zgadobliwość”: s. 105–106. Toni: s. 107. Narrator-uczestnik i ironia podwójna: s. 108. Tajemnica mimo wyjaśnienia: s. 108–109. Podwójność narratora i odbiorcy, parabola: s. 110–111. Wenecja: s. 112. (numery z druku w PDF)",
+ limit:"Autor wnioskuje o „intencji ironicznego nadawcy”; to rekonstrukcja, nie fakt. Dla innych nowel włoskich ma tylko krótkie uwagi.",
+ relacja:"Polemizuje z odczytaniami „rozwiązującymi” zagadkę; cytuje Adamca i Dąbrowicz. Kącka powołuje się na niego w kwestii ironii.", use:["P2","P3","P5"]},
+{id:"K", status:"T", cite:"Eliza Kącka, Świat wzniosłych uczuć i dobrych manier, czyli Norwidowskie prawo inwersji, Studia Norwidiana 38 (2020) (czytana wersja angielska; polskie strony mogą się różnić)",
+ where:"Artykuł dostępny online (DOI 10.18290/sn.2020.38-7en)", url:"https://doi.org/10.18290/sn.2020.38-7en",
+ tezy:[
+  "Tytułowe „secret” trzeba czytać w świetle antropologii Norwida; kontekst paryski jest więcej niż tłem (życie, opinie); Wenecja bywa „kamuflażem”.",
+  "Prawo inwersji (wielkie w małym, wysokie w niskim, głośne w cichym) jest regułą semiotyczną i źródłem ironii; w „Tajemnicy…” działa szczególnie wyraźnie.",
+  "Lord i jego rytuały są klisze literackiej (angielski ekscentryk: Wilde, Verne); Toni sprawia, że lord staje się legendą miejską.",
+  "Autorka proponuje hipotetyczny kontekst: Philoxène Boyer („brudny przyjaciel Baudelaire’a”), historia z papierowymi paczkami, Wilde, Swift; sama pisze, że nie ma dowodu na związek.",
+  "Prawdopodobna treść papieru wskazana w streszczeniu (fizjologiczna) jest czytaniem autorki, nie faktem tekstowym.",
+  "Dodatek o wierszu „Purytanizm”: idea czystości (duchowej) może być przejawem dumy i okrucieństwa."],
+ loc:"§1 „Tajemnica w słowie”, §2 „Inwersja”, §3 „Przyjaciel Baudelaire’a”, §4 „Dodatek: nieczystość a mydło” (wg angielskiej wersji, s. 95–105).",
+ limit:"Wiele tez ma status spekulatywny (autorka wprost to zaznacza). Nie wolno cytować jej jako dowodu na „prawdziwe” rozwiązanie tajemnicy.",
+ relacja:"Odwołuje się do Rzepczyńskiego (postawa ironisty), Adamca (słowo „secret”), Skalińskiej (ironia), Gomulickiego („filozofia nieczystości”, odczytanie jako utwór „Swiftowski”).", use:["P3","P5"]},
+{id:"D", status:"T", cite:"Zofia Dambek-Giallelis, Tajemnice „Tajemnicy lorda Singelworth”, Studia Norwidiana 35 (2017) (czytana wersja angielska; polskie strony mogą się różnić)",
+ where:"Artykuł dostępny online (DOI 10.18290/sn.2017.35-11en)", url:"https://doi.org/10.18290/sn.2017.35-11en",
+ tezy:[
+  "Wenecja w noweli jest archiwum pamięci (Przesmycki: Tycjan, Tintoretto, utrata autonomii); szczegóły historyczne to „semiofory” (Pomian) wskazujące lukę między minionym a teraźniejszym.",
+  "Toni di Bona Grazia to postać historyczna z literackim rodowodem (Goldoni, Baschet, komedia dell’arte); przypis autorski Norwida jest wyjątkiem w całej „trylogii”.",
+  "Toni może być nie tylko komentatorem, ale „ukrytym sprawcą” legendy lorda (pytanie badaczki); to on gromadzi emocje publiczności.",
+  "Lord jest „personą”, maską tworzoną w części przez Toniego, w części przez wspomnienie narratora; tożsamość lorda jest celowo niedookreślona (pytania zamiast opisu).",
+  "Hipotetyczne konteksty: Byron (Halkiewicz-Sojak), Dionizjos Solomos u Słowackiego (hipoteza autorki, bez dowodu lektury u Norwida).",
+  "Toni i lord są komplementarni (analogia do „A Dorio ad Phrygium”), nie tylko przeciwstawni."],
+ loc:"Wenecja i pamięć: s. 195–197. Toni historyczny: s. 197–203. Mowa publiczna pod cenzurą (Dąbrowicz w cytacie): s. 203. Lord jako persona: s. 204–206. Solomos: s. 206–208. Komplementarność: s. 208. (wg angielskiej wersji)",
+ limit:"Autorka kilkukrotnie zaznacza hipotetyczność (Byron, Solomos). Nie wolno przedstawiać ich jako ustaleń.",
+ relacja:"Przywołuje Dąbrowicz (mowa publiczna), Adamca, Rzepczyńskiego, Trybusia (wspomnieniowy charakter), Halkiewicz-Sojak (Byron), Weintraub (humor skatologiczny).", use:["P1","P2","P5"]},
+{id:"A", status:"B", cite:"Marian Adamiec, „Tajemnica lorda Singelworth” albo metafizyka balonu, Studia Norwidiana 3–4 (1985–1986), s. 201–215 (strony wg Kąckiej)",
+ where:"do znalezienia (archiwum Studia Norwidiana)", url:"",
+ tezy:["Znane tylko z cytatów: Rzepczyński przytacza z s. 212 myśl, że każdy w tajemnicy znalazł odpowiedź na pytanie, jakie był w stanie postawić. Kącka odwołuje się do niego w sprawie słowa „tajemnica” (s. 202). To nie wystarcza do pisania o stanowisku Adamca."],
+ loc:"s. 201–215", limit:"Nie czytałem. Wszystko powyżej to relacja z drugiej ręki.", relacja:"Cytowany przez Rzepczyńskiego, Kąckę, Dambek-Giallelis.", use:["P5"]},
+{id:"DA", status:"B", cite:"Elżbieta Dąbrowicz, „Tajemnica lorda Singelworth” Cypriana Norwida. Strategia publicznego mówienia, Studia Norwidiana 3–4 (1985–1986), s. 217–229 (strony wg Rzepczyńskiego)",
+ where:"do znalezienia (archiwum Studia Norwidiana)", url:"",
+ tezy:["Znane tylko z cytatu w artykule Dambek-Giallelis (s. 203): wypowiedź improwizatora uwzględnia podwójnego odbiorcę (spiskujących słuchaczy i podsłuchujących informatorów); w warunkach niewoli pojawia się „język ezopowy”. Dambek-Giallelis wskazuje też na s. 221–223 Dąbrowicz jako źródło obrazu miasta pod obcą władzą."],
+ loc:"s. 217–229", limit:"Nie czytałem; to relacja z drugiej ręki.", relacja:"Cytowana przez Rzepczyńskiego i Dambek-Giallelis.", use:["P1","P3"]},
+{id:"S", status:"N", cite:"Elżbieta Skalińska, Jeszcze o „Tajemnicy lorda Singelworth”. Między ironią a autoironią, Colloquia Litteraria 2017, nr 22 (Komitet) / nr 1, s. 107–122 (Kącka)",
+ where:"do znalezienia", url:"",
+ tezy:["Nie czytałem. Uwaga o rozbieżności: w opisie Komitetu „nr 22”, u Kąckiej „no. 1, pp. 107–122” i imię „Ewangelina”. Ustal prawidłowy opis w samym czasopiśmie."],
+ loc:"s. 107–122", limit:"Brak lektury.", relacja:"Kącka powołuje się na artykuł w kwestii ironii.", use:["P3"]},
+{id:"B", status:"N", cite:"Michaił Bachtin, Twórczość Franciszka Rabelais'go a kultura ludowa średniowiecza i renesansu, przeł. A. i A. Goreniowie, Kraków 1975 (wybrane fragmenty)",
+ where:"biblioteka", url:"",
+ tezy:["Nie czytałem. Wszystkie odwołania do Bachtina w tej stronie to hipotezy [H] do sprawdzenia po lekturze."],
+ loc:"wybrane fragmenty (zakres do ustalenia)", limit:"Brak lektury.", relacja:"—", use:["P4"]},
+{id:"M", status:"N", cite:"Marian Maciejewski, Spojrzenie „w górę” i „wokoło” (Norwid – Malczewski), Roczniki Humanistyczne 1976, t. XXIV, z. 1",
+ where:"do znalezienia", url:"", tezy:["Nie czytałem. Tytuł wskazuje na oś „w górę”/„wokoło”, która może łączyć się z Twoją osią góra–dół, ale nie wolno tego przypisywać autorowi bez lektury."], loc:"—", limit:"Brak lektury.", relacja:"—", use:["P5"]},
+{id:"RW", status:"N", cite:"Sławomir Rzepczyński, Wokół nowel „włoskich” Norwida. Z zagadnień komunikacji literackiej, Słupsk 1996",
+ where:"biblioteka", url:"", tezy:["Nie czytałem. To jedyna pozycja z listy dotycząca wszystkich trzech nowel; potrzebna do tezy T15."], loc:"—", limit:"Brak lektury.", relacja:"—", use:["P1","P2","P5"]},
+{id:"Ł", status:"N", cite:"Zdzisław Łapiński, Cyprian Norwid, Kraków 1971; Tomasz Łubieński, Norwid wraca do Paryża, Kraków 1989",
+ where:"biblioteka", url:"", tezy:["Nie czytałem. Szerszy kontekst twórczości."], loc:"—", limit:"Brak lektury.", relacja:"—", use:["P5"]}
+];
+const OUTSIDE = [
+ "Juliusz W. Gomulicki, O „Trylogii włoskiej” Norwida (wstęp do wydania „Trylogia włoska”): wskazywany przez Kąckę i Dambek-Giallelis; dotyczy genezy i odczytania jako utworu „Swiftowskiego”.",
+ "Krzysztof Trybuś, Maska lorda Singelwortha, Studia Norwidiana 14 (1996), s. 96–97: wspomniany w przypisie Dambek-Giallelis jako źródło tezy o wspomnieniowym charakterze noweli.",
+ "Grażyna Halkiewicz-Sojak, Byron w twórczości Norwida, Toruń 1994, s. 112–113: hipoteza o Byronie jako prototypie lorda (według Dambek-Giallelis).",
+ "Wiktor Weintraub, Norwid i Ameryka, Studia Norwidiana 14 (1996), s. 17: określenie „humor skatologiczny” w kontekście noweli (według Dambek-Giallelis)."
+];
+
+/* ===== ĆWICZENIA ===== */
+const EXERCISES = [
+{id:"A1.1", p:"P2", title:"Wiem czy przypuszczam?", sc:["ST1","ST3"], lvl:"podst.",
+ task:"Wybierz akapit z rozdz. I, w którym narrator mówi o lordzie (np. od „Aeronaucja kilkadziesiąt lat temu…” do „zamkniętej tajemnicy”). Rozdziel jego zdania na trzy listy: widział / usłyszał od innych / domyśla się lub dopowiada. Napisz, która lista jest najdłuższa i co to mówi o narratorze.",
+ check:["Wypisane zdania są cytatami lub dokładnymi parafrazami.","Każde zdanie przypisane do jednej listy z krótkim uzasadnieniem.","Wniosek wynika z list, a nie jest dodany z zewnątrz."],
+ hint:"Szukaj czasowników wiedzy i niewiedzy („opowiadano”, „uręczano”, „domniemywania”). Czy narrator w ogóle mówi, co sam widział?"},
+{id:"A1.2", p:"P2", title:"Kiedy narrator staje się uczestnikiem", sc:["ST9","ST10"], lvl:"podst.",
+ task:"Znajdź pierwsze zdanie rozdz. II, w którym narrator mówi o sobie w pierwszej osobie. Opisz, czym różni się jego pozycja przed i po tym zdaniu. Wskaż jedną korzyść i jedno ryzyko dla czytelnika, który mu ufa.",
+ check:["Wskazany konkretny fragment i jego położenie.","Rozróżnienie świadka i uczestnika.","Wniosek o wiarygodności oparty na tekście."],
+ hint:"Zwróć uwagę na zdanie „Moje zachowanie się podczas sporu…” i na to, kto je komentuje."},
+{id:"A1.3", p:"P2", title:"Wspomnienie, nie raport", sc:["ST1","ST8"], lvl:"podst.",
+ task:"Zbierz wszystkie miejsca, w których narrator zaznacza, że pisze po czasie (np. „moje spomnienie”, „kilkadziesiąt lat temu”, zwroty w drugiej osobie). Napisz, jak zmienia się wiedza o lordzie, jeśli opowieść jest wspomnieniem, a nie relacją na bieżąco.",
+ check:["Co najmniej trzy miejsca z krótkimi cytatami.","Wniosek o wiedzy i niewiedzy narratora.","Rozróżnienie „kiedy się dzieje” i „kiedy jest opowiedziane”."],
+ hint:"Dambek-Giallelis [T] zwraca uwagę na wspomnieniowy charakter noweli; zobacz, czy to pasuje do tekstu."},
+{id:"A1.4", p:"P2", title:"Porównanie narratorów dwóch nowel", sc:["SB1","ST1","SB8"], lvl:"rozsz.",
+ task:"Porównaj sposób, w jaki narrator „Bransoletki” zdobywa wiedzę o Eulalji, ze sposobem, w jaki narrator „Tajemnicy…” zdobywa wiedzę o lordzie. Wypisz dwa podobieństwa i dwie różnice (z cytatami).",
+ check:["Cytaty z obu nowel.","Rozróżnienie źródeł wiedzy (przyjaciel, plotka, własna obserwacja).","Wniosek o funkcji takiej konstrukcji."],
+ hint:"W „Bransoletce” narrator „milczy”, a wiedzę daje mu inny; w „Tajemnicy…” wiedzę mają „głosy” miasta."},
+{id:"A1.5", p:"P2", title:"Narrator, który ocenia wprost", sc:["SL8","ST14"], lvl:"rozsz.",
+ task:"Porównaj końcówki „Ad leones!” (SL8) i „Tajemnicy…” (ST14). W której narrator wartościuje wprost? Jak to wpływa na odpowiedzialność czytelnika za sens?",
+ check:["Dwa cytaty z zakończeń.","Rozróżnienie oceny jawnej i obrazu bez komentarza.","Wniosek o roli czytelnika."],
+ hint:"Pomyśl o zdaniu „Redakcja jest redakcją” i o ostatnim obrazie z balonem."},
+
+{id:"A2.1", p:"P1", title:"Mapa Wenecji w noweli", sc:["ST2","ST8","ST14"], lvl:"podst.",
+ task:"Wypisz wszystkie miejsca w Wenecji wymienione w „Tajemnicy…” (hotel, Lido, plac Świętego Marka, Rialto, Murano, kanały…). Dla każdego napisz, co w nim się dzieje i kto jest obecny.",
+ check:["Lista kompletna (co najmniej 6 miejsc).","Przy każdym miejscu: zdarzenie i osoby.","Wniosek: które miejsca są publiczne, a które prywatne."],
+ hint:"Zwróć uwagę na zmianę miejsc od rozdz. I do II. Czy lord pojawia się w miejscach publicznych?"},
+{id:"A2.2", p:"P1", title:"Wenecja bez Wenecji", sc:["ST4","ST7","ST14"], lvl:"podst.",
+ task:"Wybierz jedną scenę z Wenecji i przenieś ją w myślach do innego miasta. Wypisz elementy, które by zniknęły, i takie, które zostałyby. Wniosek: czy Wenecja jest tłem, czy warunkiem zdarzeń?",
+ check:["Wybrana konkretna scena.","Co najmniej dwa elementy, które znikają, i dwa, które zostają.","Argument z tekstu (np. fragment o plotce pod obcym rządem)."],
+ hint:"Spróbuj ze sceną Toniego na placu św. Marka albo z regatą."},
+{id:"A2.3", p:"P1", title:"Nadzór policji", sc:["ST4","ST7","ST9","ST14"], lvl:"rozsz.",
+ task:"Zbierz wszystkie wzmianki o policji i rządzie austriackim w „Tajemnicy…”. Co mówią o sposobie, w jaki ludzie rozmawiają? Jak ten nadzór wpływa na „tajemnicę”?",
+ check:["Co najmniej trzy fragmenty.","Związek z mową Toniego.","Wniosek o wpływie nadzoru na kształt plotki."],
+ hint:"Zacznij od zdania o „despotyzmie rządu obcego” (ST4) i dodaj końcówkę z „roztropną austriacką policją”."},
+{id:"A2.4", p:"P1", title:"Rzym w „Ad leones!”", sc:["SL1","SL3"], lvl:"rozsz.",
+ task:"Wypisz miejsca Rzymu w „Ad leones!” i opisz, co daje rzeźbiarzowi „forum modelów”. Porównaj z rolą placu św. Marka w „Tajemnicy…”.",
+ check:["Miejsca z nowel.","Wskazanie funkcji publiczności.","Jedno podobieństwo i jedna różnica Wenecja/Rzym."],
+ hint:"Zwróć uwagę na zdanie o „dobrej woli publiczności” i „północnych chłodnych stronach”."},
+{id:"A2.5", p:"P1", title:"Czy „Bransoletka” dzieje się we Włoszech?", sc:["SB2","SB6"], lvl:"rozsz.",
+ task:"Przeczytaj „Bransoletkę” i wypisz wszystkie wskazówki o miejscu akcji (nazwy, obyczaje, miejsca). Napisz, co tekst potwierdza, czego nie rozstrzyga i jak sprawdzisz resztę.",
+ check:["Wskazówki zapisane bez domysłów.","Odróżnienie „tekst mówi” od „wiem skądinąd”.","Plan weryfikacji (np. inne wydania, komentarze)."],
+ hint:"W wydaniu z Wikiźródeł (Pini 1934) nie znalazłem nazwy miasta; sprawdź, czy mam rację."},
+
+{id:"A3.1", p:"P3", title:"Cztery ironie, cztery fragmenty", sc:["ST3","ST5","ST9","ST12"], lvl:"podst.",
+ task:"Dla każdego rodzaju ironii (słowna, narracyjna, sytuacyjna, społeczna) znajdź jeden fragment „Tajemnicy…”. Przy każdym podaj: kto mówi, co dosłownie, co sugeruje.",
+ check:["Cztery różne fragmenty z lokalizacją.","Wskazany mechanizm (co powiedziane, co zasugerowane).","Brak „ironii” bez uzasadnienia."],
+ hint:"Spróbuj ze „zgadobliwością” (ST3), „Rzecz dziwna…” (ST5), „jałowym przykładem” (ST9) i protestem lorda (ST12)."},
+{id:"A3.2", p:"P3", title:"Ironia lorda?", sc:["ST12","ST13"], lvl:"podst.",
+ task:"Czy lord jest ironistą, czy obiektem ironii? Wybierz dwa fragmenty jego mowy i uzasadnij odpowiedź.",
+ check:["Dwa cytaty z mowy lorda.","Rozważenie obu odpowiedzi.","Wniosek z kontrargumentem."],
+ hint:"Zwróć uwagę na ostatnie zdania („Ludzie nie są jeszcze czyści…”) i na opis jego gestów."},
+{id:"A3.3", p:"P3", title:"Podwójny adres Toniego", sc:["ST6","ST7"], lvl:"rozsz.",
+ task:"Wypisz w monologu Toniego trzy miejsca, w których mowa może być zrozumiała inaczej dla „słuchających” i dla „podsłuchujących”. Wskaż gesty i słowa. Sprawdź to z Rzepczyńskim [T].",
+ check:["Trzy fragmenty i ich dwa odczytania.","Odwołanie do Rzepczyńskiego bez zniekształcenia.","Granice interpretacji."],
+ hint:"Kichnięcie i chustka (ST6), zdanie o nosach policji (ST7)."},
+{id:"A3.4", p:"P3", title:"Czy narrator bywa przedmiotem ironii?", sc:["ST10","SL4","SL6"], lvl:"rozsz.",
+ task:"Wskaż dwa fragmenty, w których narrator (w „Tajemnicy…” lub „Ad leones!”) zostaje postawiony w śmiesznej lub kłopotliwej sytuacji. Czy to autoironia, czy ironia narratora wobec samego siebie?",
+ check:["Dwa fragmenty z kontekstem.","Rozróżnienie ironii wobec siebie i innych.","Zaznaczenie, że Skalińska [N] jest nieprzeczytana."],
+ hint:"SL6: uwaga narratora o krzyżu odnosi niezamierzony skutek. ST10: „moje zachowanie… zbyt obojętnem”."},
+{id:"A3.5", p:"P3", title:"Ironia i prawda", sc:["ST5","ST13","ST14"], lvl:"rozsz.",
+ task:"Napisz 150–200 słów: czy ironia pomaga czytelnikowi dojść do prawdy w „Tajemnicy…”, czy utrudnia wniosek? Podaj jeden argument za i jeden przeciw (z fragmentami).",
+ check:["Teza, argument, kontrargument.","Fragmenty z lokalizacją.","Przyznanie granicy interpretacji."],
+ hint:"Rzepczyński [T] pisze o „rekonstrukcji intencji ironicznego nadawcy”; Kącka [T] o czytaniu na odwrót."},
+
+{id:"A4.1", p:"P4", title:"Bachtin własnymi słowami", sc:[], lvl:"rozsz.",
+ task:"Po lekturze wybranych fragmentów Bachtina zapisz własnymi słowami: karnawał, karnawalizacja, odwrócenie hierarchii, śmiech ludowy, groteska, dół materialno-cielesny. Przy każdym pojęciu podaj numer strony i krótki cytat (do 15 słów).",
+ check:["Własne słowa, nie cytat.","Numer strony z Twojego wydania.","Wyraźnie odróżnione pojęcia."],
+ hint:"To ćwiczenie możesz zacząć dopiero po lekturze Bachtina. Do tej pory strona nie zawiera jego tez."},
+{id:"A4.2", p:"P4", title:"Test regaty", sc:["ST10","ST14"], lvl:"rozsz.",
+ task:"Sprawdź, czy regata św. Marka w „Tajemnicy…” spełnia wymienione u siebie kryteria Bachtina (A4.1). Dla każdego kryterium: tak / częściowo / nie, z fragmentem.",
+ check:["Użyte kryteria z Twojego A4.1.","Każda odpowiedź ma cytat.","Wniosek o wartości teorii."],
+ hint:"Zadanie ma sens dopiero po A4.1. Zwróć uwagę na policję i dystans lorda."},
+{id:"A4.3", p:"P4", title:"Kalendarz czy karnawalizacja?", sc:["SB2","SB8"], lvl:"rozsz.",
+ task:"W „Bransoletce” oddziel to, co jest karnawałem w sensie kalendarza (bal, post), od tego, co ewentualnie jest karnawałem w sensie Bachtina. Podaj dwa fragmenty i uzasadnij.",
+ check:["Dwa różne fragmenty.","Rozróżnienie dwóch znaczeń.","Wniosek (może być „częściowo” albo „nie”)."],
+ hint:"Najpierw wskaż, co w tekście jest powiedziane wprost („karnawał”, „post”)."},
+{id:"A4.4", p:"P4", title:"Ocena przydatności teorii", sc:[], lvl:"rozsz.",
+ task:"Napisz 200 słów: w czym teoria karnawału pomaga w czytaniu „Tajemnicy…” i „Bransoletki”, a gdzie wprowadza w błąd? Wskaż jedną rzecz, której teoria nie wyjaśnia.",
+ check:["Ocena z fragmentami.","Konkretne ograniczenie teorii.","Brak nadużycia pojęć."],
+ hint:"Nie wolno zakończyć na „teoria pasuje” albo „nie pasuje”; opisz, w jakim zakresie."},
+
+{id:"A5.1", p:"P5", title:"Zagadka czy tajemnica?", sc:["ST3","ST14"], lvl:"rozsz.",
+ task:"Rzepczyński [T] rozróżnia zagadkę i tajemnicę. Przeczytaj fragment jego artykułu (s. 111–112) i opisz to rozróżnienie własnymi słowami. Następnie wskaż fragment noweli, który ilustruje każde z pojęć.",
+ check:["Własne słowa.","Dwa fragmenty noweli.","Brak przypisania Rzepczyńskiemu tez, których nie ma w tekście."],
+ hint:"Zacznij od jego opisu „zgadobliwego” umysłu: zagadka to rzecz do rozwiązania."},
+{id:"A5.2", p:"P5", title:"Za i przeciw lordowi jako rzecznikowi", sc:["ST12","ST13","ST14"], lvl:"rozsz.",
+ task:"Napisz argument za i argument przeciw tezie, że lord jest rzecznikiem autora. Każdy z fragmentem. Wskaż, czego tekst nie rozstrzyga.",
+ check:["Dwa fragmenty.","Rozróżnienie postaci i autora.","Granica interpretacji."],
+ hint:"Rzepczyński [T] pisze o „nachyleniu ku grotesce”; weź pod uwagę łzy i ton uroczysty."},
+{id:"A5.3", p:"P5", title:"Ranking hipotez", sc:["ST5","ST12","ST13","ST14"], lvl:"rozsz.",
+ task:"Ułóż siedem hipotez o przesłaniu (patrz zagadnienie P5) od najlepiej do najsłabiej uzasadnionej tekstem. Przy każdej: jeden fragment „za” i jeden „przeciw”.",
+ check:["Cała lista.","Fragmenty z lokalizacją.","Uzasadnienie kolejności."],
+ hint:"Możesz łączyć hipotezy, ale wskaż, co zyskujesz i co tracisz."},
+{id:"A5.4", p:"P5", title:"Wstęp do wypracowania", sc:[], lvl:"rozsz.",
+ task:"Napisz wstęp (100–150 słów) do tematu: „Kto jest bardziej tajemniczy: lord czy ci, którzy go obserwują?”. Wstęp ma: problem, tezę, plan.",
+ check:["Problem sformułowany bez streszczenia.","Teza, którą da się obronić.","Plan: dwa lub trzy punkty."],
+ hint:"Zacznij od cytatu z ST3 lub ST5."},
+{id:"A5.5", p:"P5", title:"Plan z kontrargumentem", sc:[], lvl:"rozsz.",
+ task:"Rozpisz plan wypracowania do dowolnego tematu z zakładki Wypracowanie. Każdy akapit: teza częściowa, fragment, kontrargument, odpowiedź.",
+ check:["Plan z 3–5 akapitami.","Każdy akapit ma cytat.","Jeden akapit z opracowaniem [T]."],
+ hint:"Użyj schematu: fragment → narrator → środki → znaczenie → alternatywa → wniosek."},
+{id:"A5.6", p:"P5", title:"Pełne wypracowanie", sc:[], lvl:"olimp.",
+ task:"Napisz wypracowanie (min. 600 słów) na wybrany temat z zakładki Wypracowanie. Użyj co najmniej trzech scen, jednej interpretacji z opracowania i jednego kontrargumentu.",
+ check:["Teza, rozwinięcie, wniosek.","Cytaty z lokalizacją (rozdział, strona Pini).","Opracowanie przeczytane (status [T]).","Granica interpretacji."],
+ hint:"Wypracowanie możesz pisać w zakładce Wypracowanie i pobrać dla nauczyciela."}
+];
+
+/* ===== POJĘCIA ===== */
+const GLOSSARY = [
+{t:"Narrator", d:"Głos opowiadający historię. Nie jest autorem. Może uczestniczyć w zdarzeniach, wiedzieć mało albo przedstawiać cudzą wiedzę. W „Tajemnicy…” pisze wspomnienie i w rozdz. II staje się uczestnikiem (delegatem).", x:"ST1, ST10"},
+{t:"Perspektywa narracyjna", d:"Z czyjego punktu widzenia i z jaką wiedzą przedstawione jest wydarzenie. Pytaj: kto widzi, skąd wie, co dopowiada.", x:"ST5, ST7"},
+{t:"Zgadobliwość", d:"Słowo użyte w „Tajemnicy…” raz („zgadobliwości miejscowego umysłu”); oznacza skłonność do zgadywania. Rzepczyński [T] czyta je jako ironiczną diagnozę przeciętnego umysłu XIX w.", x:"ST3"},
+{t:"Ironia słowna", d:"Wypowiedź mówi jedno, a sugeruje coś innego lub przeciwnego; wymaga wskazania, co jest powiedziane i co zasugerowane.", x:"ST3, ST9"},
+{t:"Ironia narracyjna", d:"Sposób opowiadania podważa to, co narrator oficjalnie mówi lub co zdają się sądzić bohaterowie.", x:"ST5, ST10"},
+{t:"Ironia sytuacyjna", d:"Przebieg zdarzeń przeczy oczekiwaniom; np. zakład, który „rozwiązuje się” bez rozwiązania tajemnicy.", x:"ST14"},
+{t:"Ironia społeczna", d:"Odsłanianie mechanizmów oceniania, prestiżu i obyczaju (np. „wielkie weneckie nazwisko” D..., plotka masy).", x:"ST5, ST9"},
+{t:"Autoironia", d:"Narrator lub tekst podważa własną pozycję i autorytet. Skalińska [N] pisze o niej w kontekście „Tajemnicy…”; nie czytałem.", x:"ST10"},
+{t:"Parabola", d:"Opowieść o jednym zdarzeniu, której sens dotyczy czegoś ogólnego. Wymaga wskazania, co jest „odpowiednikiem” czego. Rzepczyński [T] czyta tak „Tajemnicę…”.", x:"ST14"},
+{t:"Groteska", d:"Połączenie komizmu z niepokojem przez przesadę, zderzenie sprzeczności i obniżenie wzniosłości. Rzepczyński [T] pisze, że lord jest nakreślony „z nachyleniem ku grotesce”.", x:"ST13"},
+{t:"Karnawał (Bachtin)", d:"Święto ludowe, które czasowo znosi hierarchie i normy; rządzi nim śmiech i odwrócenie porządku. Zanim użyjesz pojęcia, sprawdź je w tekście Bachtina [N].", x:"ST14, SB2"},
+{t:"Karnawalizacja", d:"Przeniesienie zasad karnawału do literatury. To nie to samo co obecność maskarady w fabule.", x:"ST7"},
+{t:"Degradacja i dół materialno-cielesny", d:"U Bachtina: obniżanie tego, co wzniosłe, do poziomu ciała i ziemi, w jego ujęciu także odnowa. Wymaga sprawdzenia w tekście Bachtina [N].", x:"ST7, ST13"},
+{t:"Inwersja", d:"Odwrócenie. U Kąckiej [T] „prawo inwersji” to reguła semiotyczna: wielkie widać w małym, wysokie w niskim, głośne w cichym.", x:"ST13"},
+{t:"Wzniosłość", d:"Kategoria tego, co wielkie i ponad codziennością. W noweli ma przeciwwagę w ciele i śmieszności.", x:"ST13"},
+{t:"Palimpsest", d:"Rękopis zapisany ponownie na zmytym tekście. Toni „czyta dzieje” ze śmietników jak z palimpsestów.", x:"ST7"},
+{t:"Improwizator", d:"Wykonawca, który tworzy teksty na gorąco. Toni di Bona Grazia to postać historyczna z komedii dell’arte (Dambek-Giallelis [T]).", x:"ST6"},
+{t:"Persona", d:"Maska społeczna, rola, wizerunek. Dambek-Giallelis [T] sugeruje, że lord jest „personą” tworzoną przez opinię.", x:"ST2"},
+{t:"Semiofor", d:"Termin Krzysztofa Pomiana: materialny nośnik pamięci, który odsyła do tego, czego już nie ma. Dambek-Giallelis [T] stosuje go do szczegółów Wenecji.", x:"ST8"},
+{t:"Ekfraza", d:"Opis dzieła sztuki lub przedmiotu jako dzieła. W „Bransoletce” opis bransoletki i obrazu Rembrandta.", x:"SB1, SB4"},
+{t:"Tajemnica a zagadka", d:"Zagadka jest do rozwiązania, tajemnica ma w sobie niewyjaśnialne jądro. Rozróżnienie pochodzi z odczytania Rzepczyńskiego [T].", x:"ST3, ST14"},
+{t:"Tautologia", d:"Zdanie, które powtarza to samo („Redakcja jest redakcją”); w „Ad leones!” pełni funkcję ironiczną.", x:"SL8"}
+];
+
+/* ===== TEMATY WYPRACOWAŃ ===== */
+const TOPICS = [
+{id:"W1", p:"P5", t:"Kto w „Tajemnicy lorda Singelworth” jest bardziej tajemniczy: lord czy ci, którzy go obserwują? Odpowiedz, analizując narratora i plotki."},
+{id:"W2", p:"P3", t:"Jak ironia kształtuje obraz Wenecji w „Tajemnicy lorda Singelworth”?"},
+{id:"W3", p:"P4", t:"Czy koncepcja karnawału Michaiła Bachtina pomaga zrozumieć nowele Norwida? Odpowiedz na podstawie „Tajemnicy…” i „Bransoletki”."},
+{id:"W4", p:"P5", t:"Czy „Tajemnica lorda Singelworth” dopuszcza jedną dominującą interpretację? Rozstrzygnij, porównując co najmniej dwa odczytania."},
+{id:"W5", p:"P2", t:"Narrator w „Tajemnicy lorda Singelworth” i w „Ad leones!”: co łączy i co dzieli sposób opowiadania?"},
+{id:"W6", p:"P1", t:"Wenecja i Rzym: dlaczego Norwid umieścił akcję nowel włoskich we Włoszech? Odpowiedz na podstawie dwóch utworów."},
+{id:"W7", p:"P5", t:"Czy lord Singelworth jest rzecznikiem autora? Rozważ argumenty za i przeciw."},
+{id:"W8", p:"P5", t:"Rola pustego papieru w „Tajemnicy lorda Singelworth”: znak, pretekst czy żart?"}
+];
+
+</script>
+<script>
+(function(){
+"use strict";
+var KEY="olijp-singelworth-v1";
+var VIEWS=[["start","S","Start"],["atlas","A","Atlas scen"],["zagadnienia","P","Zagadnienia"],["tezy","T","Tezy"],["opracowania","O","Opracowania"],["cwiczenia","Ć","Ćwiczenia"],["pojecia","W","Pojęcia"],["wypracowanie","✎","Wypracowanie"],["zeszyt","Z","Zeszyt"]];
+var st={done:{},marks:{},notes:{},general:"",essay:{topic:"W1",title:"",sign:"",text:"",status:"szkic",snap:"",updated:""},feedback:null,theme:"",last:"start"};
+var okStore=true;
+function load(){try{var r=localStorage.getItem(KEY);if(r){var o=JSON.parse(r);for(var k in o)st[k]=o[k];}}catch(e){okStore=false}}
+var saveT=null;
+function save(){try{localStorage.setItem(KEY,JSON.stringify(st));okStore=true}catch(e){okStore=false}updateProgress()}
+function saveSoon(){clearTimeout(saveT);saveT=setTimeout(save,300)}
+function $(s,r){return (r||document).querySelector(s)}
+function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function link(s){
+  s=esc(s);
+  s=s.replace(/\b(S[TBL]\d+)\b/g,'<a href="#$1" data-go="$1">$1</a>');
+  s=s.replace(/\b(A\d\.\d)\b/g,'<a href="#$1" data-go="$1">$1</a>');
+  return s;
+}
+function tagc(c){return '<span class="tg tg-'+c+'" title="'+({T:"przeczytane źródłowo",B:"tylko dane bibliograficzne lub z drugiej ręki",N:"brak lektury lub dostępu",I:"własna interpretacja",H:"hipoteza do sprawdzenia"}[c]||"")+'">['+c+']</span>';}
+function mark(s){return esc(s).replace(/\[(T|B|N|I|H)\]/g,function(m,c){return tagc(c)}).replace(/\b(S[TBL]\d+)\b/g,'<a href="#$1" data-go="$1">$1</a>').replace(/\b(A\d\.\d)\b/g,'<a href="#$1" data-go="$1">$1</a>');}
+function words(t){var m=(t||"").trim().match(/\S+/g);return m?m.length:0}
+function toast(m){var t=document.createElement("div");t.className="toast";t.textContent=m;t.setAttribute("role","status");document.body.appendChild(t);setTimeout(function(){t.remove()},2600)}
+function sceneById(id){for(var i=0;i<SCENES.length;i++)if(SCENES[i].id===id)return SCENES[i]}
+function exById(id){for(var i=0;i<EXERCISES.length;i++)if(EXERCISES[i].id===id)return EXERCISES[i]}
+
+/* ---------- nawigacja ---------- */
+var cur="start";
+function buildNav(){
+  var h="";VIEWS.forEach(function(v){h+='<button class="nav-tab" data-view="'+v[0]+'"><span class="nav-ic">'+v[1]+'</span>'+v[2]+'</button>'});
+  $("#navlist").innerHTML=h;
+  $$(".nav-tab").forEach(function(b){b.onclick=function(){show(b.dataset.view,true);$("#rail").classList.remove("open")}});
+}
+function show(v,scroll){
+  if(!document.getElementById("view-"+v))v="start";
+  cur=v;$$(".view").forEach(function(e){e.hidden=e.id!=="view-"+v});
+  $$(".nav-tab").forEach(function(b){b.classList.toggle("active",b.dataset.view===v)});
+  st.last=v;saveSoon();
+  try{history.replaceState(null,"","#"+v)}catch(e){}
+  if(scroll)window.scrollTo(0,0);
+  if(v==="zeszyt")renderNotebook();
+  if(v==="wypracowanie")renderEssayMeta();
+  document.title=(VIEWS.filter(function(x){return x[0]===v})[0]||[0,0,"Start"])[2]+" · Singelworth, zeszyt olimpijski";
+}
+function openItem(id){
+  var v="start",sel=id;
+  if(/^S[TBL]\d+$/.test(id)){v="atlas";resetAtlasFilter()}
+  else if(/^A\d\.\d$/.test(id))v="cwiczenia";
+  else if(/^T\d+$/.test(id))v="tezy";
+  else if(/^P\d$/.test(id))v="zagadnienia";
+  else if(/^[A-ZŁ]{1,2}$/.test(id)&&document.getElementById("src-"+id)){v="opracowania";sel="src-"+id}
+  else if(VIEWS.some(function(x){return x[0]===id})){show(id,true);return}
+  show(v,false);
+  var el=document.getElementById(sel);
+  if(el){if(el.classList.contains("card"))el.classList.add("open");setTimeout(function(){el.scrollIntoView({block:"start"});el.classList.add("flash");setTimeout(function(){el.classList.remove("flash")},1600)},30)}
+}
+document.addEventListener("click",function(e){
+  var a=e.target.closest("[data-go]");
+  if(a){e.preventDefault();openItem(a.dataset.go)}
+});
+
+/* ---------- START ---------- */
+function renderStart(){
+  var h='<h2 class="vt">Tajemnica lorda Singelworth</h2><p class="vsub">Zeszyt olimpijski do samodzielnej pracy: scena po scenie, z tezami, kontrargumentami i ćwiczeniami. OLiJP 2026/2027, temat: Cyprian Norwid.</p>';
+  h+='<div class="panel q">Czy najważniejszą tajemnicą noweli jest zachowanie lorda, czy sposób, w jaki ludzie próbują je zrozumieć i ocenić?</div>';
+  h+='<p class="read">To pytanie jest punktem wyjścia, nie odpowiedzią. Twoim zadaniem jest zbudować interpretację tekstu, który sam wywołuje konkurencyjne wyjaśnienia, i umieć wykazać, dlaczego jedna z nich jest mocniejsza.</p>';
+  h+='<div class="stat" id="stats"></div>';
+  h+='<h3>Jedna ścieżka pracy</h3><ol class="l"><li><b>Czytaj tekst sama.</b> Najpierw nowele (Wikiźródła), z własnymi notatkami. Potem opracowania.</li><li><b>Przejdź scenę po scenie</b> w zakładce Atlas. Przy każdej odpowiedz na pytanie i zapisz notatkę.</li><li><b>Sprawdzaj tezy</b> w zakładce Tezy: każda ma argument, kontrargument i granicę, czego tekst nie rozstrzyga.</li><li><b>Rób ćwiczenia</b> i pisz wypracowanie. Samodzielne rozumowanie jest ważniejsze niż liczba kart.</li></ol>';
+  h+='<h3>Oznaczenia rygoru źródłowego</h3><div class="legend">'+["T","B","N","I","H"].map(function(c){return '<span>'+tagc(c)+({T:"przeczytane, stanowisko sprawdzone w tekście",B:"tylko bibliografia lub relacja z drugiej ręki",N:"brak lektury lub dostępu",I:"własna interpretacja, do obrony",H:"hipoteza do sprawdzenia"}[c])+'</span>'}).join("")+'</div>';
+  h+='<div class="panel warn" style="margin-top:18px"><b>Ważne o tekście.</b> Strona odsyła do wydania z Wikiźródeł (Dzieła Cyprjana Norwida, wyd. Pini 1934). Komitet OLiJP wskazuje inne wydania (Gomulicki, Rzońca i Samsel). Pisownia i numeracja stron mogą się różnić; cytuj przez rozdział i fragment, a ważniejsze cytaty skonfrontuj z wydaniem Komitetu.</div>';
+  h+='<div class="panel"><b>Czego ta strona jeszcze nie ma.</b> Nie czytałem Bachtina, Adamca, Dąbrowicz, Skalińskiej, Maciejewskiego, Łapińskiego, Łubieńskiego ani książki Rzepczyńskiego o nowelach włoskich. Przy tych pozycjach są oznaczenia [N] lub [B], a każda odwołująca się do nich teza jest hipotezą.</div>';
+  h+='<div class="tools"><button class="btn" data-go="atlas">Zacznij od Atlasu scen</button><button class="btn alt" data-go="ST1">Scena 1: pytania zamiast opowieści</button><button class="btn alt" id="contBtn">Wróć do ostatniego miejsca</button></div>';
+  $("#view-start").innerHTML=h;
+  $("#contBtn").onclick=function(){show(st.last&&st.last!=="start"?st.last:"atlas",true)};
+}
+function updateProgress(){
+  var s=SCENES.filter(function(x){return st.done[x.id]}).length,e=EXERCISES.filter(function(x){return st.done[x.id]}).length,w=words(st.essay.text);
+  var el=$("#stats");
+  if(el)el.innerHTML='<div class="s"><b>'+s+'/'+SCENES.length+'</b><span>scen przeczytanych</span></div><div class="s"><b>'+e+'/'+EXERCISES.length+'</b><span>ćwiczeń zrobionych</span></div><div class="s"><b>'+w+'</b><span>słów wypracowania ('+esc(st.essay.status)+')</span></div>';
+  var p=$("#progBar"),pt=$("#progTxt");
+  var tot=SCENES.length+EXERCISES.length,dn=s+e;
+  if(p)p.style.width=Math.round(100*dn/tot)+"%";
+  if(pt)pt.textContent=s+"/"+SCENES.length+" scen, "+e+"/"+EXERCISES.length+" ćwiczeń";
+}
+
+/* ---------- ATLAS ---------- */
+var af={w:"",p:"",s:""};
+function resetAtlasFilter(){af={w:"",p:"",s:""};renderAtlas()}
+function sceneCard(sc){
+  var W=WORKS[sc.w];
+  var h='<article class="card" id="'+sc.id+'" data-w="'+sc.w+'" data-tags="'+sc.tags.join(" ")+'">';
+  h+='<button class="ch" aria-expanded="false"><span class="badge st-'+sc.w+'">'+sc.id+'</span><span class="tt"><b>'+esc(sc.title)+'</b><small>'+esc(W.short)+' · '+esc(sc.loc)+' · '+sc.tags.join(", ")+'</small></span><span class="caret">▶</span></button>';
+  h+='<div class="cb"><blockquote>'+esc(sc.quote)+'</blockquote><small class="status">'+esc(W.src)+'. Cytat z wydania Wikiźródeł.</small>';
+  h+='<div class="lbl">Co jest w tekście '+tagc("T")+'</div><p>'+link(sc.fakt)+'</p>';
+  h+='<div class="lbl">Narrator i wiedza</div><p>'+link(sc.narr)+'</p>';
+  h+='<div class="lbl">Środki artystyczne</div><p>'+link(sc.means)+'</p>';
+  h+='<div class="lbl">Znaczenie (wstępne) '+tagc("I")+'</div><p>'+mark(sc.znaczenie)+'</p>';
+  h+='<div class="lbl">Interpretacje konkurencyjne</div>'+sc.alts.map(function(a){return '<div class="alt"><b>'+mark(a.l)+'</b>'+mark(a.t)+'</div>'}).join("");
+  h+='<div class="pc"><div class="pro"><b>Za</b>'+mark(sc.pro)+'</div><div class="con"><b>Przeciw / ograniczenia</b>'+mark(sc.con)+'</div></div>';
+  if(sc.mn)h+='<div class="mn"><b>Twoje notatki.</b> '+mark(sc.mn)+'</div>';
+  h+='<div class="lbl">Pytanie do Ciebie</div><p><b>'+esc(sc.q)+'</b></p>';
+  h+='<div class="lbl">Powiązania</div><p>'+sc.tags.map(function(t){return '<a class="chip" href="#'+t+'" data-go="'+t+'">'+t+'</a>'}).join("")+(sc.th||[]).map(function(t){return '<a class="chip" href="#'+t+'" data-go="'+t+'">'+t+'</a>'}).join("")+'</p>';
+  h+='<textarea class="n" data-note="'+sc.id+'" aria-label="Notatka do sceny '+sc.id+'" placeholder="Twoja odpowiedź na pytanie i notatki do tej sceny…"></textarea>';
+  h+='<div class="tools"><label><input type="checkbox" data-done="'+sc.id+'"> Przeczytana i opracowana</label><button class="star" data-mark="'+sc.id+'" aria-pressed="false">☆ Zakładka</button></div>';
+  h+='</div></article>';return h;
+}
+function renderAtlas(){
+  var h='<h2 class="vt">Atlas scen</h2><p class="vsub">'+SCENES.length+' scen z trzech nowel: '+SCENES.filter(function(x){return x.w==="T"}).length+' z „Tajemnicy…”, '+SCENES.filter(function(x){return x.w==="B"}).length+' z „Bransoletki”, '+SCENES.filter(function(x){return x.w==="L"}).length+' z „Ad leones!”. Lokalizacja podana jest przez rozdział i numer strony druku Pini w nawiasie kwadratowym, tak jak na Wikiźródłach.</p>';
+  h+='<div class="filters"><span class="lab">Utwór:</span>'+[["","Wszystkie"],["T","Tajemnica…"],["B","Bransoletka"],["L","Ad leones!"]].map(function(x){return '<button class="chip" data-aw="'+x[0]+'" aria-pressed="'+(af.w===x[0])+'">'+x[1]+'</button>'}).join("")+'</div>';
+  h+='<div class="filters"><span class="lab">Zagadnienie:</span><button class="chip" data-ap="" aria-pressed="'+(af.p==="")+'">Wszystkie</button>'+PROBLEMS.map(function(p){return '<button class="chip" data-ap="'+p.id+'" aria-pressed="'+(af.p===p.id)+'">'+p.id+' '+esc(p.name)+'</button>'}).join("")+'</div>';
+  h+='<div class="filters"><span class="lab">Stan:</span>'+[["","Wszystkie"],["todo","Do zrobienia"],["done","Przeczytane"],["mark","Zakładki"]].map(function(x){return '<button class="chip" data-as="'+x[0]+'" aria-pressed="'+(af.s===x[0])+'">'+x[1]+'</button>'}).join("")+'</div>';
+  h+='<div class="status" id="acount"></div><div id="cards">'+SCENES.map(sceneCard).join("")+'</div>';
+  $("#view-atlas").innerHTML=h;
+  $$("#view-atlas [data-aw]").forEach(function(b){b.onclick=function(){af.w=b.dataset.aw;renderAtlas()}});
+  $$("#view-atlas [data-ap]").forEach(function(b){b.onclick=function(){af.p=b.dataset.ap;renderAtlas()}});
+  $$("#view-atlas [data-as]").forEach(function(b){b.onclick=function(){af.s=b.dataset.as;renderAtlas()}});
+  wireCards($("#view-atlas"));applyAtlasFilter();
+}
+function applyAtlasFilter(){
+  var n=0;
+  $$("#cards .card").forEach(function(c){
+    var id=c.id,ok=true;
+    if(af.w&&c.dataset.w!==af.w)ok=false;
+    if(af.p&&c.dataset.tags.split(" ").indexOf(af.p)<0)ok=false;
+    if(af.s==="done"&&!st.done[id])ok=false;
+    if(af.s==="todo"&&st.done[id])ok=false;
+    if(af.s==="mark"&&!st.marks[id])ok=false;
+    c.hidden=!ok;if(ok)n++;
+  });
+  var el=$("#acount");if(el)el.textContent="Widoczne: "+n+" z "+SCENES.length;
+}
+function wireCards(root){
+  $$(".card>.ch",root).forEach(function(b){b.onclick=function(){var c=b.parentNode;c.classList.toggle("open");b.setAttribute("aria-expanded",c.classList.contains("open"))}});
+  $$("[data-note]",root).forEach(function(t){t.value=st.notes[t.dataset.note]||"";t.oninput=function(){st.notes[t.dataset.note]=t.value;saveSoon()}});
+  $$("[data-done]",root).forEach(function(c){c.checked=!!st.done[c.dataset.done];c.onchange=function(){st.done[c.dataset.done]=c.checked;if(!c.checked)delete st.done[c.dataset.done];save();if($("#view-atlas")&&!$("#view-atlas").hidden)applyAtlasFilter()}});
+  $$("[data-mark]",root).forEach(function(b){function r(){var on=!!st.marks[b.dataset.mark];b.setAttribute("aria-pressed",on);b.textContent=(on?"★":"☆")+" Zakładka"}r();b.onclick=function(){if(st.marks[b.dataset.mark])delete st.marks[b.dataset.mark];else st.marks[b.dataset.mark]=true;save();r();if($("#view-atlas")&&!$("#view-atlas").hidden)applyAtlasFilter()}});
+}
+
+/* ---------- ZAGADNIENIA ---------- */
+function renderProblems(){
+  var h='<h2 class="vt">Zagadnienia olimpijskie</h2><p class="vsub">Pięć problemów wskazanych przez Komitet. Przy każdym: oficjalne sformułowanie, co już wiadomo z tekstu, pytania, hipotezy, pułapki, sceny, opracowania i ćwiczenia.</p>';
+  PROBLEMS.forEach(function(p){
+    h+='<article class="card" id="'+p.id+'"><button class="ch" aria-expanded="false"><span class="badge">'+p.id+'</span><span class="tt"><b>'+esc(p.name)+'</b><small>'+esc(p.off)+'</small></span><span class="caret">▶</span></button><div class="cb">';
+    h+='<div class="lbl">Oficjalne sformułowanie</div><p>'+esc(p.off)+'</p>';
+    h+='<div class="lbl">Co już wiadomo</div><ul class="l">'+p.know.map(function(k){return '<li>'+mark(k)+'</li>'}).join("")+'</ul>';
+    h+='<div class="lbl">Pytania robocze</div><ul class="l">'+p.q.map(function(k){return '<li>'+mark(k)+'</li>'}).join("")+'</ul>';
+    h+='<div class="lbl">Hipotezy do sprawdzenia</div><ul class="l">'+p.hyp.map(function(k){return '<li>'+mark(k)+'</li>'}).join("")+'</ul>';
+    h+='<div class="lbl">Pułapki</div><ul class="l">'+p.trap.map(function(k){return '<li>'+esc(k)+'</li>'}).join("")+'</ul>';
+    h+='<div class="lbl">Sceny</div><p>'+p.sc.map(function(s){return '<a class="chip" href="#'+s+'" data-go="'+s+'">'+s+'</a>'}).join("")+'</p>';
+    h+='<div class="lbl">Opracowania</div><p>'+p.srcs.map(function(s){return '<a class="chip" href="#'+s+'" data-go="'+s+'">'+s+'</a>'}).join("")+'</p>';
+    h+='<div class="lbl">Ćwiczenia</div><p>'+p.ex.map(function(s){return '<a class="chip" href="#'+s+'" data-go="'+s+'">'+s+'</a>'}).join("")+'</p>';
+    h+='</div></article>';
+  });
+  $("#view-zagadnienia").innerHTML=h;wireCards($("#view-zagadnienia"));
+}
+
+/* ---------- TEZY ---------- */
+function renderTheses(){
+  var h='<h2 class="vt">Tezy, argumenty i kontrargumenty</h2><p class="vsub">'+THESES.length+' tez do sprawdzenia. Każda ma argument z tekstu, kontrargument, interpretację alternatywną i granicę: czego tekst nie rozstrzyga. Pole „Moja decyzja” służy do zapisu, czy tezę bronisz, odrzucasz, czy zmieniasz.</p>';
+  THESES.forEach(function(t){
+    h+='<article class="card" id="'+t.id+'"><button class="ch" aria-expanded="false"><span class="badge">'+t.id+'</span><span class="tt"><b>'+esc(t.text)+'</b><small>'+t.p+' · status tezy '+tagc(t.conf)+'</small></span><span class="caret">▶</span></button><div class="cb">';
+    h+='<div class="pc"><div class="pro"><b>Najmocniejszy argument tekstowy</b>'+mark(t.pro)+'</div><div class="con"><b>Kontrargument</b>'+mark(t.con)+'</div></div>';
+    h+='<div class="lbl">Interpretacja alternatywna</div><p>'+mark(t.alt)+'</p>';
+    h+='<div class="lbl">Czego tekst nie rozstrzyga</div><p>'+mark(t.limit)+'</p>';
+    h+='<div class="lbl">Sceny i opracowania</div><p>'+t.sc.map(function(s){return '<a class="chip" href="#'+s+'" data-go="'+s+'">'+s+'</a>'}).join("")+t.src.map(function(s){return '<a class="chip" href="#'+s+'" data-go="'+s+'">'+s+'</a>'}).join("")+'</p>';
+    h+='<textarea class="n" data-note="'+t.id+'" aria-label="Moja decyzja w sprawie tezy '+t.id+'" placeholder="Moja decyzja: bronię / odrzucam / zmieniam. Dlaczego?"></textarea>';
+    h+='</div></article>';
+  });
+  $("#view-tezy").innerHTML=h;wireCards($("#view-tezy"));
+}
+
+/* ---------- OPRACOWANIA ---------- */
+function renderSources(){
+  var h='<h2 class="vt">Opracowania</h2><p class="vsub">Lista Komitetu OLiJP. Trzy artykuły (Rzepczyński, Kącka, Dambek-Giallelis) zostały przeczytane i opisane poniżej. Pozostałe pozycje są oznaczone jako [B] lub [N]: nie wolno przypisywać ich autorom tez bez lektury.</p>';
+  SOURCES.forEach(function(s){
+    h+='<article class="card" id="src-'+s.id+'"><button class="ch" aria-expanded="false"><span class="badge">'+s.id+'</span><span class="tt"><b>'+esc(s.cite)+'</b><small>'+tagc(s.status)+' · '+esc(s.where)+'</small></span><span class="caret">▶</span></button><div class="cb">';
+    if(s.url)h+='<p><a href="'+esc(s.url)+'" target="_blank" rel="noopener">Otwórz źródło</a></p>';
+    h+='<div class="lbl">'+(s.status==="T"?"Tezy autora (moje streszczenie)":"Stan wiedzy")+'</div><ul class="l">'+s.tezy.map(function(t){return '<li>'+mark(t)+'</li>'}).join("")+'</ul>';
+    h+='<div class="lbl">Lokalizacja</div><p>'+esc(s.loc)+'</p>';
+    h+='<div class="lbl">Ograniczenia</div><p>'+mark(s.limit)+'</p>';
+    h+='<div class="lbl">Relacja do innych opracowań</div><p>'+esc(s.relacja)+'</p>';
+    h+='<div class="lbl">Przydatność dla zagadnień</div><p>'+s.use.map(function(u){return '<a class="chip" href="#'+u+'" data-go="'+u+'">'+u+'</a>'}).join("")+'</p>';
+    h+='<textarea class="n" data-note="src-'+s.id+'" aria-label="Notatka do opracowania" placeholder="Karta badacza: teza, uzasadnienie, strona, ograniczenia, czy się zgadzam i dlaczego…"></textarea>';
+    h+='</div></article>';
+  });
+  h+='<h3>Pozycje spoza listy Komitetu, znane z przypisów</h3><ul class="l">'+OUTSIDE.map(function(o){return '<li>'+esc(o)+'</li>'}).join("")+'</ul><p class="status">To wskazówki, gdzie szukać dalej; nie czytałem tych pozycji.</p>';
+  h+='<h3>Uwaga o wersjach językowych</h3><p>Artykuły Kąckiej i Dambek-Giallelis czytałem w angielskich wersjach opublikowanych przez czasopismo. Numery stron polskich wersji mogą się różnić, więc przy cytowaniu sprawdź je w polskim tekście.</p>';
+  $("#view-opracowania").innerHTML=h;wireCards($("#view-opracowania"));
+}
+
+/* ---------- ĆWICZENIA ---------- */
+function renderExercises(){
+  var h='<h2 class="vt">Ćwiczenia</h2><p class="vsub">'+EXERCISES.length+' ćwiczeń do pięciu zagadnień. Każde ma zadanie, kryteria sprawdzenia i wskazówkę. Odpowiedź zapisujesz tu; kryteria służą do samodzielnej oceny, nie zastępują oceny nauczyciela.</p>';
+  h+='<div class="filters"><span class="lab">Zagadnienie:</span><button class="chip" data-ep="" aria-pressed="'+(ef==="")+'">Wszystkie</button>'+PROBLEMS.map(function(p){return '<button class="chip" data-ep="'+p.id+'" aria-pressed="'+(ef===p.id)+'">'+p.id+'</button>'}).join("")+'</div>';
+  EXERCISES.forEach(function(e){
+    var pid=e.p||e.pn;
+    if(ef&&pid!==ef)return;
+    h+='<article class="card" id="'+e.id+'"><button class="ch" aria-expanded="false"><span class="badge">'+e.id+'</span><span class="tt"><b>'+esc(e.title)+'</b><small>'+pid+' · poziom: '+esc(e.lvl)+'</small></span><span class="caret">▶</span></button><div class="cb">';
+    h+='<p class="read">'+esc(e.task)+'</p>';
+    h+='<div class="lbl">Kryteria samooceny</div><ul class="l">'+e.check.map(function(c){return '<li>'+esc(c)+'</li>'}).join("")+'</ul>';
+    h+='<details><summary class="lbl" style="cursor:pointer">Wskazówka</summary><p>'+mark(e.hint)+'</p></details>';
+    if(e.sc.length)h+='<div class="lbl">Sceny pomocnicze</div><p>'+e.sc.map(function(s){return '<a class="chip" href="#'+s+'" data-go="'+s+'">'+s+'</a>'}).join("")+'</p>';
+    h+='<textarea class="n" style="min-height:140px" data-note="'+e.id+'" aria-label="Odpowiedź do ćwiczenia '+e.id+'" placeholder="Twoja odpowiedź…"></textarea>';
+    h+='<div class="tools"><label><input type="checkbox" data-done="'+e.id+'"> Zrobione</label><span class="status" data-wc="'+e.id+'"></span></div></div></article>';
+  });
+  $("#view-cwiczenia").innerHTML=h;
+  $$("#view-cwiczenia [data-ep]").forEach(function(b){b.onclick=function(){ef=b.dataset.ep;renderExercises()}});
+  wireCards($("#view-cwiczenia"));
+  $$("#view-cwiczenia [data-note]").forEach(function(t){var w=$('[data-wc="'+t.dataset.note+'"]');function u(){w.textContent=words(t.value)+" słów"}u();t.addEventListener("input",u)});
+}
+var ef="";
+
+/* ---------- POJĘCIA ---------- */
+function renderGlossary(){
+  var h='<h2 class="vt">Pojęcia</h2><p class="vsub">Definicje robocze. Przy terminach Bachtina i Kąckiej sprawdź znaczenie w samym źródle, zanim użyjesz ich w pracy.</p>';
+  var sorted=GLOSSARY.slice().sort(function(a,b){return a.t.localeCompare(b.t,"pl")});
+  h+=sorted.map(function(g){return '<div class="panel" id="g-'+esc(g.t)+'"><b>'+esc(g.t)+'</b><p>'+mark(g.d)+'</p><p class="status">Zobacz: '+g.x.split(", ").map(function(x){return '<a href="#'+x+'" data-go="'+x+'">'+x+'</a>'}).join(", ")+'</p></div>'}).join("");
+  $("#view-pojecia").innerHTML=h;
+}
+
+/* ---------- WYPRACOWANIE ---------- */
+function renderEssay(){
+  var h='<h2 class="vt">Wypracowanie</h2><p class="vsub">Pisz tutaj. Tekst zapisuje się w tej przeglądarce. Gdy skończysz, oznacz pracę jako gotową do oceny i pobierz plik dla nauczyciela. Samo pobranie niczego nie wysyła; plik wyślij sama.</p>';
+  h+='<div class="panel"><label for="topic"><b>Temat</b></label><select id="topic" class="tx">'+TOPICS.map(function(t){return '<option value="'+t.id+'">'+t.id+' · '+esc(t.t)+'</option>'}).join("")+'</select>';
+  h+='<label for="etitle" style="display:block;margin-top:10px"><b>Własny tytuł lub teza (opcjonalnie)</b></label><input id="etitle" class="tx" type="text" maxlength="200">';
+  h+='<label for="esign" style="display:block;margin-top:10px"><b>Podpis (np. inicjały)</b></label><input id="esign" class="tx" type="text" maxlength="40"></div>';
+  h+='<textarea id="essay" class="ed" aria-label="Tekst wypracowania" placeholder="Zacznij od problemu i tezy. Każdy akapit: teza częściowa, fragment, kontrargument."></textarea>';
+  h+='<div class="status" id="ewc"></div>';
+  h+='<div class="panel chk"><b>Lista kontrolna</b>'+["Mam tezę, którą da się obronić.","Każdy akapit ma fragment z noweli i jego lokalizację (rozdział, strona Pini).","Mam co najmniej jeden kontrargument i odpowiedź na niego.","Odróżniam fakt tekstowy, własny wniosek i stanowisko badacza.","Powołuję się tylko na opracowania, które przeczytałam.","Napisałam, czego tekst nie rozstrzyga."].map(function(x,i){return '<label><input type="checkbox" data-ck="'+i+'"> '+esc(x)+'</label>'}).join("")+'</div>';
+  h+='<div class="tools"><button class="btn alt" id="eDraft">Zostaw jako szkic</button><button class="btn" id="eReady">Gotowa do oceny</button><button class="btn alt" id="eDl">Pobierz pracę dla nauczyciela</button><button class="btn alt" id="eCopy">Kopiuj tekst</button></div>';
+  h+='<div class="status" id="estat"></div>';
+  h+='<h3>Ocena nauczyciela</h3><p class="status">Gdy nauczyciel odeśle plik z oceną, wczytaj go tutaj. Odpowiedź nauczyciela zostanie zapisana w tej przeglądarce.</p><input type="file" id="fbFile" accept=".json,application/json" aria-label="Wczytaj ocenę nauczyciela"><div id="fbBox"></div>';
+  $("#view-wypracowanie").innerHTML=h;
+  var T=$("#topic"),ti=$("#etitle"),sg=$("#esign"),ed=$("#essay");
+  T.value=st.essay.topic;ti.value=st.essay.title;sg.value=st.essay.sign;ed.value=st.essay.text;
+  function upd(){st.essay.topic=T.value;st.essay.title=ti.value;st.essay.sign=sg.value;st.essay.text=ed.value;st.essay.updated=new Date().toISOString();$("#ewc").textContent=words(ed.value)+" słów · status: "+st.essay.status+(okStore?"":" · uwaga: przeglądarka nie zapisuje; skopiuj tekst");saveSoon()}
+  [T,ti,sg,ed].forEach(function(e){e.addEventListener("input",upd)});upd();
+  $$("[data-ck]").forEach(function(c){var k="ck"+c.dataset.ck;c.checked=!!(st.essay.ck&&st.essay.ck[c.dataset.ck]);c.onchange=function(){st.essay.ck=st.essay.ck||{};st.essay.ck[c.dataset.ck]=c.checked;save()}});
+  $("#eDraft").onclick=function(){st.essay.status="szkic";save();upd();$("#estat").textContent="Zapisano jako szkic."};
+  $("#eReady").onclick=function(){if(words(ed.value)<20){$("#estat").textContent="Za mało tekstu, napisz co najmniej kilka zdań.";return}st.essay.status="gotowa do oceny";st.essay.snap=ed.value;save();upd();$("#estat").textContent="Oznaczona jako gotowa do oceny. Pobierz plik i wyślij go nauczycielowi."};
+  $("#eDl").onclick=function(){
+    var topic=TOPICS.filter(function(t){return t.id===st.essay.topic})[0];
+    var pack={typ:"olijp-singelworth-praca",wersja:1,zapisano:new Date().toISOString(),podpis:st.essay.sign,temat:topic?topic.t:"",tytul:st.essay.title,status:st.essay.status,slowa:words(st.essay.text),tekst:st.essay.text,wersjaPierwotna:st.essay.snap||st.essay.text,notatkiSceny:st.notes};
+    download("praca-singelworth-"+new Date().toISOString().slice(0,10)+".json",JSON.stringify(pack,null,2),$("#estat"));
+  };
+  $("#eCopy").onclick=function(){copyText(ed.value,$("#estat"))};
+  $("#fbFile").onchange=function(ev){var f=ev.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(){try{var o=JSON.parse(r.result);if(o.typ!=="olijp-singelworth-ocena")throw new Error("to nie jest plik z oceną");st.feedback=o;save();renderFeedback();toast("Wczytano ocenę.")}catch(e){$("#estat").textContent="Nie udało się wczytać: "+e.message}};r.readAsText(f)};
+  renderFeedback();
+}
+function renderEssayMeta(){if(!$("#essay"))return}
+function renderFeedback(){
+  var b=$("#fbBox");if(!b)return;var f=st.feedback;
+  if(!f){b.innerHTML='<p class="status">Brak wczytanej oceny.</p>';return}
+  b.innerHTML='<div class="panel"><b>Status: '+esc(f.status)+'</b><p>'+esc(f.uzasadnienie||"").replace(/\n/g,"<br>")+'</p>'+(f.kryteria?'<ul class="l">'+Object.keys(f.kryteria).map(function(k){return '<li>'+esc(k)+': '+esc(f.kryteria[k])+'</li>'}).join("")+'</ul>':"")+'<p class="status">Wczytano z pliku. Pierwotna wersja pracy zostaje poniżej do porównania.</p></div><div class="cmp"><div><b>Wersja pierwotna</b><br>'+esc(st.essay.snap||"(brak zapisanej wersji pierwotnej)")+'</div><div><b>Wersja bieżąca</b><br>'+esc(st.essay.text)+'</div></div>';
+}
+function download(name,content,statusEl){
+  try{
+    var blob=new Blob([content],{type:"application/json"});var u=URL.createObjectURL(blob);var a=document.createElement("a");a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},2000);
+    if(statusEl)statusEl.textContent="Przygotowano plik „"+name+"”. Jeśli pobieranie nie ruszyło, użyj przycisku „Kopiuj” i wklej treść do pliku.";
+  }catch(e){if(statusEl)statusEl.textContent="Pobieranie nie działa w tej przeglądarce. Użyj „Kopiuj”."}
+}
+function copyText(txt,el){
+  function fb(){var ta=document.createElement("textarea");ta.value=txt;ta.style.cssText="position:fixed;opacity:0";document.body.appendChild(ta);ta.select();var ok=false;try{ok=document.execCommand("copy")}catch(e){}ta.remove();if(el)el.textContent=ok?"Skopiowano.":"Nie udało się skopiować; zaznacz tekst ręcznie."}
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(function(){if(el)el.textContent="Skopiowano."},fb);else fb();
+}
+
+/* ---------- ZESZYT ---------- */
+function titleOf(id){
+  var s=sceneById(id);if(s)return id+" · "+s.title;
+  var e=exById(id);if(e)return id+" · "+e.title;
+  var t=THESES.filter(function(x){return x.id===id})[0];if(t)return id+" · "+t.text;
+  if(/^src-/.test(id)){var q=SOURCES.filter(function(x){return "src-"+x.id===id})[0];if(q)return "Opracowanie "+q.id}
+  return id;
+}
+function renderNotebook(){
+  var h='<h2 class="vt">Zeszyt</h2><p class="vsub">Wszystkie Twoje notatki w jednym miejscu, zakładki i kopia bezpieczeństwa.</p>';
+  h+='<h3>Notatki ogólne</h3><textarea class="n" id="gen" aria-label="Notatki ogólne" style="min-height:120px" placeholder="Pytania, pomysły, sprawy do omówienia…"></textarea>';
+  var ids=Object.keys(st.notes).filter(function(k){return st.notes[k]&&st.notes[k].trim()});
+  h+='<h3>Twoje notatki ('+ids.length+')</h3>';
+  h+=ids.length?ids.map(function(id){return '<div class="panel"><a href="#'+id+'" data-go="'+id.replace(/^src-/,"")+'"><b>'+esc(titleOf(id))+'</b></a><p style="white-space:pre-wrap">'+esc(st.notes[id])+'</p></div>'}).join(""):'<p class="status">Jeszcze nie ma notatek.</p>';
+  var mk=Object.keys(st.marks);
+  h+='<h3>Zakładki ('+mk.length+')</h3>'+(mk.length?mk.map(function(id){return '<a class="chip" href="#'+id+'" data-go="'+id+'">'+esc(titleOf(id))+'</a>'}).join(""):'<p class="status">Brak zakładek.</p>');
+  h+='<h3>Kopia bezpieczeństwa</h3><p class="status">Dane są zapisane tylko w tej przeglądarce na tym urządzeniu. Wyczyszczenie danych przeglądarki je usuwa. Pobieraj kopię regularnie.</p><div class="tools"><button class="btn" id="bkDl">Pobierz kopię</button><button class="btn alt" id="bkCopy">Kopiuj kopię</button><label class="btn alt" for="bkFile" style="cursor:pointer">Wczytaj kopię</label><input type="file" id="bkFile" accept=".json" hidden></div><div class="status" id="bkSt"></div><div id="bkConfirm"></div>';
+  h+='<h3>Eksport notatek jako tekst</h3><div class="tools"><button class="btn alt" id="txtCopy">Kopiuj wszystkie notatki</button></div>';
+  $("#view-zeszyt").innerHTML=h;
+  var g=$("#gen");g.value=st.general||"";g.oninput=function(){st.general=g.value;saveSoon()};
+  function pack(){return JSON.stringify({typ:"olijp-singelworth-kopia",wersja:1,zapisano:new Date().toISOString(),dane:st},null,2)}
+  $("#bkDl").onclick=function(){download("kopia-singelworth-"+new Date().toISOString().slice(0,10)+".json",pack(),$("#bkSt"))};
+  $("#bkCopy").onclick=function(){copyText(pack(),$("#bkSt"))};
+  $("#bkFile").onchange=function(ev){var f=ev.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(){try{var o=JSON.parse(r.result);if(o.typ!=="olijp-singelworth-kopia"||!o.dane)throw new Error("to nie jest kopia bezpieczeństwa tej strony");
+    $("#bkConfirm").innerHTML='<div class="panel warn"><b>Uwaga.</b> Wczytanie kopii zastąpi wszystkie bieżące notatki, zakładki i wypracowanie. <div class="tools"><button class="btn" id="bkYes">Zastąp moje dane</button><button class="btn alt" id="bkNo">Anuluj</button></div></div>';
+    $("#bkYes").onclick=function(){st=Object.assign({done:{},marks:{},notes:{},general:"",essay:st.essay,feedback:null,theme:st.theme,last:"zeszyt"},o.dane);save();renderAll();show("zeszyt",true);toast("Wczytano kopię.")};
+    $("#bkNo").onclick=function(){$("#bkConfirm").innerHTML=""};
+  }catch(e){$("#bkSt").textContent="Nie udało się wczytać: "+e.message}};r.readAsText(f);ev.target.value=""};
+  $("#txtCopy").onclick=function(){var t=(st.general?"NOTATKI OGÓLNE\n"+st.general+"\n\n":"")+ids.map(function(id){return titleOf(id)+"\n"+st.notes[id]}).join("\n\n");copyText(t,$("#bkSt"))};
+}
+
+/* ---------- WYSZUKIWANIE ---------- */
+function norm(s){return String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/ł/g,"l")}
+function search(q){
+  q=norm(q.trim());if(!q)return[];
+  var out=[];
+  SCENES.forEach(function(s){var hay=norm([s.title,s.quote,s.fakt,s.narr,s.means,s.znaczenie,s.q].join(" "));if(hay.indexOf(q)>=0)out.push({id:s.id,t:s.id+" · "+s.title,k:"scena · "+WORKS[s.w].short+" · "+s.loc})});
+  THESES.forEach(function(s){var hay=norm([s.text,s.pro,s.con,s.alt,s.limit].join(" "));if(hay.indexOf(q)>=0)out.push({id:s.id,t:s.id+" · "+s.text,k:"teza"})});
+  EXERCISES.forEach(function(s){var hay=norm([s.title,s.task,s.hint].join(" "));if(hay.indexOf(q)>=0)out.push({id:s.id,t:s.id+" · "+s.title,k:"ćwiczenie"})});
+  GLOSSARY.forEach(function(s){var hay=norm(s.t+" "+s.d);if(hay.indexOf(q)>=0)out.push({id:"pojecia",t:s.t,k:"pojęcie"})});
+  PROBLEMS.forEach(function(s){var hay=norm([s.name,s.off,s.know.join(" ")].join(" "));if(hay.indexOf(q)>=0)out.push({id:s.id,t:s.id+" · "+s.name,k:"zagadnienie"})});
+  SOURCES.forEach(function(s){var hay=norm(s.cite+" "+s.tezy.join(" "));if(hay.indexOf(q)>=0)out.push({id:s.id,t:s.cite,k:"opracowanie"})});
+  return out;
+}
+function runSearch(){
+  var q=$("#q").value;var v=$("#view-szukaj");
+  if(!q.trim()){v.hidden=true;show(cur==="szukaj"?"start":cur,false);return}
+  var res=search(q);
+  $$(".view").forEach(function(e){e.hidden=true});v.hidden=false;
+  v.innerHTML='<h2 class="vt">Wyniki wyszukiwania</h2><p class="vsub">„'+esc(q)+'”: '+res.length+' wyników.</p>'+(res.length?res.slice(0,60).map(function(r){return '<button class="res" data-go="'+esc(r.id)+'"><b>'+esc(r.t)+'</b><br><small>'+esc(r.k)+'</small></button>'}).join(""):'<p>Nic nie znaleziono. Spróbuj krótszego fragmentu albo słowa bez polskich znaków.</p>');
+}
+
+/* ---------- motyw, init ---------- */
+function applyTheme(){var t=st.theme;if(!t){if(document.documentElement.getAttribute("data-theme"))return;t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",t)}
+function renderAll(){renderStart();renderAtlas();renderProblems();renderTheses();renderSources();renderExercises();renderGlossary();renderEssay();updateProgress()}
+function init(){
+  load();applyTheme();buildNav();renderAll();
+  $("#themeBtn").onclick=function(){var t=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";st.theme=t;applyTheme();save()};
+  $("#menuBtn").onclick=function(){$("#rail").classList.toggle("open")};
+  $("#q").addEventListener("input",runSearch);
+  document.addEventListener("keydown",function(e){
+    if(e.key==="/"&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();$("#q").focus()}
+    if(e.key==="Escape"){if($("#q").value){$("#q").value="";runSearch()}$("#rail").classList.remove("open")}
+  });
+  var h=(location.hash||"").slice(1);
+  if(h&&document.getElementById("view-"+h))show(h,false);
+  else if(h)openItem(h);
+  else show(st.last&&document.getElementById("view-"+st.last)?st.last:"start",false);
+  if(!okStore)toast("Ta przeglądarka nie pozwala zapisywać danych. Notatki nie przetrwają zamknięcia.");
+}
+init();
+})();
+
+</script>
+</body>
+</html>
