@@ -119,6 +119,7 @@ ul.l{margin:.3em 0 .3em 1.15em;padding:0}ul.l li{margin:.28em 0}
     <section class="view" id="view-opracowania" hidden></section>
     <section class="view" id="view-cwiczenia" hidden></section>
     <section class="view" id="view-pojecia" hidden></section>
+    <section class="view" id="view-tematy" hidden></section>
     <section class="view" id="view-wypracowanie" hidden></section>
     <section class="view" id="view-zeszyt" hidden></section>
     <section class="view" id="view-szukaj" hidden></section>
@@ -884,11 +885,11 @@ const EXERCISES = [
  check:["Problem sformułowany bez streszczenia.","Teza, którą da się obronić.","Plan: dwa lub trzy punkty."],
  hint:"Zacznij od cytatu z ST3 lub ST5."},
 {id:"A5.5", p:"P5", title:"Plan z kontrargumentem", sc:[], lvl:"rozsz.",
- task:"Rozpisz plan wypracowania do dowolnego tematu z zakładki Wypracowanie. Każdy akapit: teza częściowa, fragment, kontrargument, odpowiedź.",
+ task:"Rozpisz plan wypracowania do jednego z tematów z zakładki Tematy. Każdy akapit: teza częściowa, fragment, kontrargument, odpowiedź.",
  check:["Plan z 3–5 akapitami.","Każdy akapit ma cytat.","Jeden akapit z opracowaniem [T]."],
  hint:"Użyj schematu: fragment → narrator → środki → znaczenie → alternatywa → wniosek."},
 {id:"A5.6", p:"P5", title:"Pełne wypracowanie", sc:[], lvl:"olimp.",
- task:"Napisz wypracowanie (min. 600 słów) na wybrany temat z zakładki Wypracowanie. Użyj co najmniej trzech scen, jednej interpretacji z opracowania i jednego kontrargumentu.",
+ task:"Napisz wypracowanie (min. 600 słów) na wybrany temat z zakładki Tematy. Użyj co najmniej trzech scen, jednej interpretacji z opracowania i jednego kontrargumentu.",
  check:["Teza, rozwinięcie, wniosek.","Cytaty z lokalizacją (rozdział, strona Pini).","Opracowanie przeczytane (status [T]).","Granica interpretacji."],
  hint:"Wypracowanie możesz pisać w zakładce Wypracowanie i pobrać dla nauczyciela."}
 ];
@@ -919,16 +920,11 @@ const GLOSSARY = [
 {t:"Tautologia", d:"Zdanie, które powtarza to samo („Redakcja jest redakcją”); w „Ad leones!” pełni funkcję ironiczną.", x:"SL8"}
 ];
 
-/* ===== TEMATY WYPRACOWAŃ ===== */
+/* ===== TEMATY WYPRACOWAŃ (olimpijskie) ===== */
 const TOPICS = [
-{id:"W1", p:"P5", t:"Kto w „Tajemnicy lorda Singelworth” jest bardziej tajemniczy: lord czy ci, którzy go obserwują? Odpowiedz, analizując narratora i plotki."},
-{id:"W2", p:"P3", t:"Jak ironia kształtuje obraz Wenecji w „Tajemnicy lorda Singelworth”?"},
-{id:"W3", p:"P4", t:"Czy koncepcja karnawału Michaiła Bachtina pomaga zrozumieć nowele Norwida? Odpowiedz na podstawie „Tajemnicy…” i „Bransoletki”."},
-{id:"W4", p:"P5", t:"Czy „Tajemnica lorda Singelworth” dopuszcza jedną dominującą interpretację? Rozstrzygnij, porównując co najmniej dwa odczytania."},
-{id:"W5", p:"P2", t:"Narrator w „Tajemnicy lorda Singelworth” i w „Ad leones!”: co łączy i co dzieli sposób opowiadania?"},
-{id:"W6", p:"P1", t:"Wenecja i Rzym: dlaczego Norwid umieścił akcję nowel włoskich we Włoszech? Odpowiedz na podstawie dwóch utworów."},
-{id:"W7", p:"P5", t:"Czy lord Singelworth jest rzecznikiem autora? Rozważ argumenty za i przeciw."},
-{id:"W8", p:"P5", t:"Rola pustego papieru w „Tajemnicy lorda Singelworth”: znak, pretekst czy żart?"}
+{id:"O1", t:"„Pociski te jednakże obijały się ostatecznie o drzwi twarde zamkniętej tajemnicy”. Narrator, plotka i ironia w nowelach włoskich Norwida"},
+{id:"O2", t:"„Nieczystość jest to niskość”. Karnawał, ciało i wzniosłość w prozie Norwida"},
+{id:"O3", t:"„Był to balon lorda Singelworth”. Granice interpretacji Tajemnicy lorda Singelworth"}
 ];
 
 </script>
@@ -936,8 +932,8 @@ const TOPICS = [
 (function(){
 "use strict";
 var KEY="olijp-singelworth-v1";
-var VIEWS=[["start","S","Start"],["atlas","A","Atlas scen"],["zagadnienia","P","Zagadnienia"],["tezy","T","Tezy"],["opracowania","O","Opracowania"],["cwiczenia","Ć","Ćwiczenia"],["pojecia","W","Pojęcia"],["wypracowanie","✎","Wypracowanie"],["zeszyt","Z","Zeszyt"]];
-var st={done:{},marks:{},notes:{},general:"",essay:{topic:"W1",title:"",sign:"",text:"",status:"szkic",snap:"",updated:""},feedback:null,theme:"",last:"start"};
+var VIEWS=[["start","S","Start"],["atlas","A","Atlas scen"],["zagadnienia","P","Zagadnienia"],["tezy","T","Tezy"],["opracowania","O","Opracowania"],["cwiczenia","Ć","Ćwiczenia"],["pojecia","W","Pojęcia"],["tematy","◆","Tematy"],["wypracowanie","✎","Wypracowanie"],["zeszyt","Z","Zeszyt"]];
+var st={done:{},marks:{},notes:{},general:"",essay:{topic:"O1",title:"",sign:"",text:"",status:"szkic",snap:"",updated:""},feedback:null,theme:"",last:"start"};
 var okStore=true;
 function load(){try{var r=localStorage.getItem(KEY);if(r){var o=JSON.parse(r);for(var k in o)st[k]=o[k];}}catch(e){okStore=false}}
 var saveT=null;
@@ -1146,6 +1142,11 @@ function renderExercises(){
 var ef="";
 
 /* ---------- POJĘCIA ---------- */
+function renderTopics(){
+  var h='<h2 class="vt">Tematy wypracowań</h2><p class="vsub">Trzy tematy do wyboru. Wybrany temat wybierasz w zakładce Wypracowanie.</p>';
+  h+=TOPICS.map(function(t,i){return '<div class="panel"><div class="lbl">Temat '+(i+1)+'</div><p class="read" style="font-weight:600;margin:6px 0 0">'+esc(t.t)+'</p></div>'}).join("");
+  $("#view-tematy").innerHTML=h;
+}
 function renderGlossary(){
   var h='<h2 class="vt">Pojęcia</h2><p class="vsub">Definicje robocze. Przy terminach Bachtina i Kąckiej sprawdź znaczenie w samym źródle, zanim użyjesz ich w pracy.</p>';
   var sorted=GLOSSARY.slice().sort(function(a,b){return a.t.localeCompare(b.t,"pl")});
@@ -1167,7 +1168,7 @@ function renderEssay(){
   h+='<h3>Ocena nauczyciela</h3><p class="status">Gdy nauczyciel odeśle plik z oceną, wczytaj go tutaj. Odpowiedź nauczyciela zostanie zapisana w tej przeglądarce.</p><input type="file" id="fbFile" accept=".json,application/json" aria-label="Wczytaj ocenę nauczyciela"><div id="fbBox"></div>';
   $("#view-wypracowanie").innerHTML=h;
   var T=$("#topic"),ti=$("#etitle"),sg=$("#esign"),ed=$("#essay");
-  T.value=st.essay.topic;ti.value=st.essay.title;sg.value=st.essay.sign;ed.value=st.essay.text;
+  T.value=st.essay.topic;if(!T.value)T.value=TOPICS[0].id;ti.value=st.essay.title;sg.value=st.essay.sign;ed.value=st.essay.text;
   function upd(){st.essay.topic=T.value;st.essay.title=ti.value;st.essay.sign=sg.value;st.essay.text=ed.value;st.essay.updated=new Date().toISOString();$("#ewc").textContent=words(ed.value)+" słów · status: "+st.essay.status+(okStore?"":" · uwaga: przeglądarka nie zapisuje; skopiuj tekst");saveSoon()}
   [T,ti,sg,ed].forEach(function(e){e.addEventListener("input",upd)});upd();
   $$("[data-ck]").forEach(function(c){var k="ck"+c.dataset.ck;c.checked=!!(st.essay.ck&&st.essay.ck[c.dataset.ck]);c.onchange=function(){st.essay.ck=st.essay.ck||{};st.essay.ck[c.dataset.ck]=c.checked;save()}});
@@ -1253,7 +1254,7 @@ function runSearch(){
 
 /* ---------- motyw, init ---------- */
 function applyTheme(){var t=st.theme;if(!t){if(document.documentElement.getAttribute("data-theme"))return;t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",t)}
-function renderAll(){renderStart();renderAtlas();renderProblems();renderTheses();renderSources();renderExercises();renderGlossary();renderEssay();updateProgress()}
+function renderAll(){renderStart();renderAtlas();renderProblems();renderTheses();renderSources();renderExercises();renderGlossary();renderTopics();renderEssay();updateProgress()}
 function init(){
   load();applyTheme();buildNav();renderAll();
   $("#themeBtn").onclick=function(){var t=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";st.theme=t;applyTheme();save()};
